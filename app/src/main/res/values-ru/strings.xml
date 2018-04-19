@@ -2,4 +2,7 @@
 <resources>
     <string name="app_name">Просмотр счетчиков</string>
     <string name="hello_world">Привет мир!</string>
+    <string name="menu_title_settings">Настройки</string>
+    <string name="menu_title_search">Поиск</string>
+
 </resources>

@@ -2,4 +2,7 @@
 <resources>
     <string name="app_name">Перегляд лічильників</string>
     <string name="hello_world">Вітаю тебе світе</string>
+    <string name="menu_title_settings">Налаштування</string>
+    <string name="menu_title_search">Пошук</string>
+
 </resources>
