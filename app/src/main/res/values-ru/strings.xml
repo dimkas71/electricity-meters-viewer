@@ -4,5 +4,6 @@
     <string name="hello_world">Привет мир!</string>
     <string name="menu_title_settings">Настройки</string>
     <string name="menu_title_search">Поиск</string>
+    <string name="searchable_hint">Ввести номер договора...</string>
 
 </resources>
