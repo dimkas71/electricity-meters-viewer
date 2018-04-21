@@ -11,6 +11,7 @@
         android:title="@string/menu_title_search"
         android:icon="@android:drawable/ic_menu_search"
         auto:showAsAction="ifRoom"
-        android:orderInCategory="0"/>
+        android:orderInCategory="0"
+        auto:actionViewClass="android.support.v7.widget.SearchView"/>
 
 </menu>
