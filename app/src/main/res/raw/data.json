@@ -1,0 +1,4702 @@
+[
+  {
+    "id": 12,
+    "number": "113 = 457/5тс ОПР",
+    "owner": "Гакман Василь Михайлович",
+    "sectorNumber": 5,
+    "counters": [
+      {
+        "id": 16,
+        "factoryNumber": "008517017009817",
+        "value": 5344
+      }
+    ],
+    "credits": [
+      {
+        "id": 12,
+        "service": "ELECTRICITY",
+        "counter": "008517017009817",
+        "credit": 16.69
+      },
+      {
+        "id": 12,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 12,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "number": "117 = 626/5тс",
+    "owner": "Співак Олександр Михайлович",
+    "sectorNumber": 5,
+    "counters": [
+      {
+        "id": 84,
+        "factoryNumber": "0603490402528855",
+        "value": 1009
+      }
+    ],
+    "credits": [
+      {
+        "id": 74,
+        "service": "ELECTRICITY",
+        "counter": "0603490402528855",
+        "credit": 25.78
+      },
+      {
+        "id": 74,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 74,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "id": 210,
+    "number": "1103 С = 9685/С",
+    "owner": "Цегельник Вадим Олександрович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 225,
+        "factoryNumber": "08239123",
+        "value": 45529
+      }
+    ],
+    "credits": [
+      {
+        "id": 210,
+        "service": "ELECTRICITY",
+        "counter": "08239123",
+        "credit": -0.06
+      }
+    ]
+  },
+  {
+    "id": 229,
+    "number": "110 \"З\" = 2060/1тс",
+    "owner": "Бойчак Віталій Георгійович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 245,
+        "factoryNumber": "08248788",
+        "value": 6489
+      }
+    ],
+    "credits": [
+      {
+        "id": 229,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 900.0
+      },
+      {
+        "id": 229,
+        "service": "ELECTRICITY",
+        "counter": "08248788",
+        "credit": 769.43
+      },
+      {
+        "id": 229,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      }
+    ]
+  },
+  {
+    "id": 236,
+    "number": "11 С = 3569/3тс",
+    "owner": "Харюк Iван Iванович",
+    "sectorNumber": 3,
+    "counters": [
+      {
+        "id": 252,
+        "factoryNumber": "08249181",
+        "value": 993
+      }
+    ],
+    "credits": [
+      {
+        "id": 236,
+        "service": "ELECTRICITY",
+        "counter": "08249181",
+        "credit": 23.09
+      },
+      {
+        "id": 236,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 236,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 530.0
+      }
+    ]
+  },
+  {
+    "id": 279,
+    "number": "116 С = 3553/3тс",
+    "owner": "Козуб Iван Миколайович",
+    "sectorNumber": 3,
+    "counters": [
+      {
+        "id": 301,
+        "factoryNumber": "09001172",
+        "value": 6334
+      }
+    ],
+    "credits": [
+      {
+        "id": 279,
+        "service": "ELECTRICITY",
+        "counter": "09001172",
+        "credit": -0.75
+      }
+    ]
+  },
+  {
+    "id": 417,
+    "number": "118 М = 1278/С/1 тс",
+    "owner": "Глібка  Ігор Вікторович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 448,
+        "factoryNumber": "09022999",
+        "value": 4398
+      }
+    ],
+    "credits": [
+      {
+        "id": 417,
+        "service": "ELECTRICITY",
+        "counter": "09022999",
+        "credit": -0.93
+      }
+    ]
+  },
+  {
+    "id": 420,
+    "number": "114 М = 1710/С",
+    "owner": "Грицик Наталія Анатоліївна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 452,
+        "factoryNumber": "09023283",
+        "value": 2620
+      }
+    ],
+    "credits": [
+      {
+        "id": 420,
+        "service": "ELECTRICITY",
+        "counter": "09023283",
+        "credit": 57.89
+      },
+      {
+        "id": 420,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 47.5
+      },
+      {
+        "id": 420,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 528.0
+      }
+    ]
+  },
+  {
+    "id": 427,
+    "number": "112 В = 2274/1тс",
+    "owner": "Михайлюк Наталія Михайлівна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 460,
+        "factoryNumber": "09023399",
+        "value": 3948
+      }
+    ],
+    "credits": [
+      {
+        "id": 427,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 546.0
+      },
+      {
+        "id": 427,
+        "service": "ELECTRICITY",
+        "counter": "09023399",
+        "credit": -0.24
+      },
+      {
+        "id": 427,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      }
+    ]
+  },
+  {
+    "id": 433,
+    "number": "110 В = 163-вес/1тс",
+    "owner": "Салахор Георгій Іванович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 467,
+        "factoryNumber": "09025028",
+        "value": 3081
+      }
+    ],
+    "credits": [
+      {
+        "id": 433,
+        "service": "ELECTRICITY",
+        "counter": "09025028",
+        "credit": -0.74
+      },
+      {
+        "id": 433,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 433,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 546.0
+      }
+    ]
+  },
+  {
+    "id": 493,
+    "number": "1101 С = 9684/С",
+    "owner": "Цегельник Вадим Олександрович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 532,
+        "factoryNumber": "09034154",
+        "value": 1411
+      }
+    ],
+    "credits": [
+      {
+        "id": 493,
+        "service": "ELECTRICITY",
+        "counter": "09034154",
+        "credit": -0.71
+      }
+    ]
+  },
+  {
+    "id": 502,
+    "number": "113 В = 282/1тс",
+    "owner": "Бейдер Леонід Колманович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 541,
+        "factoryNumber": "09034319",
+        "value": 3645
+      }
+    ],
+    "credits": [
+      {
+        "id": 502,
+        "service": "ELECTRICITY",
+        "counter": "09034319",
+        "credit": 145.23
+      },
+      {
+        "id": 502,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 502,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 546.0
+      }
+    ]
+  },
+  {
+    "id": 518,
+    "number": "115 В = 1280/1 тс",
+    "owner": "Пентелейчук Георгій Тодорович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 562,
+        "factoryNumber": "09034600",
+        "value": 3032
+      }
+    ],
+    "credits": [
+      {
+        "id": 518,
+        "service": "ELECTRICITY",
+        "counter": "09034600",
+        "credit": -0.38
+      },
+      {
+        "id": 518,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 518,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 578.0
+      }
+    ]
+  },
+  {
+    "id": 521,
+    "number": "115 = 2824-к/4тс ОПР",
+    "owner": "Нічведа Любов Валеріївна",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 565,
+        "factoryNumber": "09036722",
+        "value": 27531
+      }
+    ],
+    "credits": [
+      {
+        "id": 521,
+        "service": "ELECTRICITY",
+        "counter": "09036722",
+        "credit": 318.5
+      },
+      {
+        "id": 521,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 521,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "id": 557,
+    "number": "117 С = 3022/3тс",
+    "owner": "Майстер Сергій Анатолійович",
+    "sectorNumber": 3,
+    "counters": [
+      {
+        "id": 610,
+        "factoryNumber": "09044674",
+        "value": 7600
+      }
+    ],
+    "credits": [
+      {
+        "id": 557,
+        "service": "ELECTRICITY",
+        "counter": "09044674",
+        "credit": 163.23
+      },
+      {
+        "id": 557,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 557,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 980.0
+      }
+    ]
+  },
+  {
+    "id": 572,
+    "number": "11 П = 1400-к/1тс",
+    "owner": "Дарійчук Василь Манолійович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 629,
+        "factoryNumber": "09046907",
+        "value": 11194
+      }
+    ],
+    "credits": [
+      {
+        "id": 572,
+        "service": "ELECTRICITY",
+        "counter": "09046907",
+        "credit": 404.97
+      },
+      {
+        "id": 572,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 572,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "id": 790,
+    "number": "119 = 2185/4 тс",
+    "owner": "Ниміджан Людмила Григорівна",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 869,
+        "factoryNumber": "09072350",
+        "value": 22492
+      }
+    ],
+    "credits": [
+      {
+        "id": 790,
+        "service": "ELECTRICITY",
+        "counter": "09072350",
+        "credit": -0.22
+      }
+    ]
+  },
+  {
+    "id": 797,
+    "number": "1106 С = 9321/С",
+    "owner": "Требиш Юрій Васильович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 877,
+        "factoryNumber": "09074155",
+        "value": 2858
+      }
+    ],
+    "credits": [
+      {
+        "id": 797,
+        "service": "ELECTRICITY",
+        "counter": "09074155",
+        "credit": -0.6
+      }
+    ]
+  },
+  {
+    "id": 811,
+    "number": "11 ЗП = 856/6тс",
+    "owner": "Звоздецький Олександр Васильович",
+    "sectorNumber": 6,
+    "counters": [
+      {
+        "id": 893,
+        "factoryNumber": "09074550",
+        "value": 11775
+      }
+    ],
+    "credits": [
+      {
+        "id": 811,
+        "service": "ELECTRICITY",
+        "counter": "09074550",
+        "credit": 390.59
+      },
+      {
+        "id": 811,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 811,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 551.0
+      }
+    ]
+  },
+  {
+    "id": 923,
+    "number": "119 Р = 2445/2тс",
+    "owner": "Головач Альона Юріївна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 1010,
+        "factoryNumber": "09092447",
+        "value": 2106
+      }
+    ],
+    "credits": [
+      {
+        "id": 923,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 689.0
+      },
+      {
+        "id": 923,
+        "service": "ELECTRICITY",
+        "counter": "09092447",
+        "credit": 43.56
+      },
+      {
+        "id": 923,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      }
+    ]
+  },
+  {
+    "id": 1095,
+    "number": "115 = 1345/2тс ОПР",
+    "owner": "Ганзюк Михайло Юхимович",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 1187,
+        "factoryNumber": "09093381",
+        "value": 2574
+      }
+    ],
+    "credits": [
+      {
+        "id": 1095,
+        "service": "ELECTRICITY",
+        "counter": "09093381",
+        "credit": 51.33
+      },
+      {
+        "id": 1095,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 1095,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "id": 1105,
+    "number": "111 = 2801/2тс",
+    "owner": "Тока Свiтлана Василiвна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 1203,
+        "factoryNumber": "09093372",
+        "value": 1190
+      }
+    ],
+    "credits": [
+      {
+        "id": 1105,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 491.0
+      },
+      {
+        "id": 1105,
+        "service": "ELECTRICITY",
+        "counter": "09093372",
+        "credit": 48.66
+      },
+      {
+        "id": 1105,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      }
+    ]
+  },
+  {
+    "id": 1116,
+    "number": "110 = 1305-кш/1тс",
+    "owner": "Бакалим Руслан Сергійович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 1214,
+        "factoryNumber": "09093408",
+        "value": 5051
+      }
+    ],
+    "credits": [
+      {
+        "id": 1116,
+        "service": "ELECTRICITY",
+        "counter": "09093408",
+        "credit": 115.84
+      },
+      {
+        "id": 1116,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 1116,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "id": 1241,
+    "number": "112 С = 3946/3тс ОПР",
+    "owner": "Войцикевич Оксана Михайлівна",
+    "sectorNumber": 3,
+    "counters": [
+      {
+        "id": 1340,
+        "factoryNumber": "09110994",
+        "value": 1612
+      }
+    ],
+    "credits": [
+      {
+        "id": 1241,
+        "service": "ELECTRICITY",
+        "counter": "09110994",
+        "credit": 28.77
+      },
+      {
+        "id": 1241,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 1241,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 947.0
+      }
+    ]
+  },
+  {
+    "id": 1283,
+    "number": "113 С = 4124/3тс",
+    "owner": "Шихман Владлена Вікторівна",
+    "sectorNumber": 3,
+    "counters": [
+      {
+        "id": 1385,
+        "factoryNumber": "09112721",
+        "value": 2795
+      }
+    ],
+    "credits": [
+      {
+        "id": 1283,
+        "service": "ELECTRICITY",
+        "counter": "09112721",
+        "credit": 37.63
+      },
+      {
+        "id": 1283,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 1283,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 947.0
+      }
+    ]
+  },
+  {
+    "id": 1284,
+    "number": "111 С = 4127/3тс",
+    "owner": "Шихман Владлена Вікторівна",
+    "sectorNumber": 3,
+    "counters": [
+      {
+        "id": 1386,
+        "factoryNumber": "09112738",
+        "value": 3650
+      }
+    ],
+    "credits": [
+      {
+        "id": 1284,
+        "service": "ELECTRICITY",
+        "counter": "09112738",
+        "credit": -818.29
+      },
+      {
+        "id": 1284,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 1284,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 947.0
+      }
+    ]
+  },
+  {
+    "id": 1292,
+    "number": "1105 С = 2193/4тс",
+    "owner": "Требиш Василь Пантелейович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 1394,
+        "factoryNumber": "09114470",
+        "value": 3542
+      }
+    ],
+    "credits": [
+      {
+        "id": 1292,
+        "service": "ELECTRICITY",
+        "counter": "09114470",
+        "credit": -0.77
+      }
+    ]
+  },
+  {
+    "id": 1305,
+    "number": "119 С = 3344/3тс",
+    "owner": "Ветлiнська Hiна Миколаївна",
+    "sectorNumber": 3,
+    "counters": [
+      {
+        "id": 1409,
+        "factoryNumber": "09114898",
+        "value": 2160
+      }
+    ],
+    "credits": [
+      {
+        "id": 1305,
+        "service": "ELECTRICITY",
+        "counter": "09114898",
+        "credit": 23.26
+      },
+      {
+        "id": 1305,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 1305,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 980.0
+      }
+    ]
+  },
+  {
+    "id": 1468,
+    "number": "116 А = 2547/2тс ОПР",
+    "owner": "Погірляк Марія Павлівна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 1578,
+        "factoryNumber": "09133700",
+        "value": 3812
+      }
+    ],
+    "credits": [
+      {
+        "id": 1468,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 689.0
+      },
+      {
+        "id": 1468,
+        "service": "ELECTRICITY",
+        "counter": "09133700",
+        "credit": 43.23
+      },
+      {
+        "id": 1468,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      }
+    ]
+  },
+  {
+    "id": 1741,
+    "number": "119 = 1964/2тс",
+    "owner": "Малованюк Інна Олександрівна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 1863,
+        "factoryNumber": "09142758",
+        "value": 1824
+      }
+    ],
+    "credits": [
+      {
+        "id": 1741,
+        "service": "ELECTRICITY",
+        "counter": "09142758",
+        "credit": -0.35
+      }
+    ]
+  },
+  {
+    "id": 1752,
+    "number": "1155 = 939/Д",
+    "owner": "Галицький Микола Агапiйович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 1874,
+        "factoryNumber": "09151003",
+        "value": 783
+      }
+    ],
+    "credits": [
+      {
+        "id": 1752,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 202.0
+      }
+    ]
+  },
+  {
+    "id": 1776,
+    "number": "115 А = 2097/В",
+    "owner": "Струс Людмила Станiславiвна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 1900,
+        "factoryNumber": "09156133",
+        "value": 1086
+      }
+    ],
+    "credits": [
+      {
+        "id": 1776,
+        "service": "ELECTRICITY",
+        "counter": "09156133",
+        "credit": 8.64
+      },
+      {
+        "id": 1776,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 1776,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 689.0
+      }
+    ]
+  },
+  {
+    "id": 1878,
+    "number": "113 Р = 2420/В",
+    "owner": "Воронюк Галина Пантелеївна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 2003,
+        "factoryNumber": "09161302",
+        "value": 1325
+      }
+    ],
+    "credits": [
+      {
+        "id": 1878,
+        "service": "ELECTRICITY",
+        "counter": "09161302",
+        "credit": 1.18
+      },
+      {
+        "id": 1878,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 1878,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 689.0
+      }
+    ]
+  },
+  {
+    "id": 1940,
+    "number": "112 = 1665/2тс",
+    "owner": "Деменчук Ірина  Петрівна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 2066,
+        "factoryNumber": "09194854",
+        "value": 543
+      }
+    ],
+    "credits": [
+      {
+        "id": 1940,
+        "service": "ELECTRICITY",
+        "counter": "09194854",
+        "credit": 2.69
+      },
+      {
+        "id": 1940,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 1940,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 252.0
+      }
+    ]
+  },
+  {
+    "id": 1941,
+    "number": "1111 = 154/Д",
+    "owner": "Гапюк Павло Петрович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 2067,
+        "factoryNumber": "09198509",
+        "value": 922
+      },
+      {
+        "id": 2068,
+        "factoryNumber": "3226350",
+        "value": 1070
+      }
+    ],
+    "credits": [
+      {
+        "id": 1941,
+        "service": "ELECTRICITY",
+        "counter": "09198509",
+        "credit": -0.54
+      },
+      {
+        "id": 1941,
+        "service": "ELECTRICITY",
+        "counter": "3226350",
+        "credit": -0.65
+      }
+    ]
+  },
+  {
+    "id": 1957,
+    "number": "112 = 209 (кв)",
+    "owner": "Сташкевич Олена Борисівна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 2085,
+        "factoryNumber": "09202779",
+        "value": 805
+      }
+    ],
+    "credits": [
+      {
+        "id": 1957,
+        "service": "ELECTRICITY",
+        "counter": "09202779",
+        "credit": 16.92
+      },
+      {
+        "id": 1957,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 275.0
+      }
+    ]
+  },
+  {
+    "id": 1965,
+    "number": "11 = 181-С/6тс",
+    "owner": "Товарна біржа \"Центральна\"",
+    "sectorNumber": 6,
+    "counters": [
+      {
+        "id": 2094,
+        "factoryNumber": "09198604",
+        "value": 9211
+      }
+    ],
+    "credits": [
+      {
+        "id": 1965,
+        "service": "ELECTRICITY",
+        "counter": "09198604",
+        "credit": -0.64
+      },
+      {
+        "id": 1965,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 1965,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 826.0
+      }
+    ]
+  },
+  {
+    "id": 2009,
+    "number": "1117 = 9021/С",
+    "owner": "Цегельник Вадим Олександрович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 2140,
+        "factoryNumber": "10001067",
+        "value": 1813
+      },
+      {
+        "id": 2141,
+        "factoryNumber": "10086284",
+        "value": 16546
+      }
+    ],
+    "credits": [
+      {
+        "id": 2009,
+        "service": "ELECTRICITY",
+        "counter": "10001067",
+        "credit": -0.5
+      },
+      {
+        "id": 2009,
+        "service": "ELECTRICITY",
+        "counter": "10086284",
+        "credit": -0.62
+      }
+    ]
+  },
+  {
+    "id": 2014,
+    "number": "1115/1 = 2638/4тс",
+    "owner": "Воронюк Валерій Васильович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 2146,
+        "factoryNumber": "10010654",
+        "value": 391
+      },
+      {
+        "id": 2147,
+        "factoryNumber": "3226380",
+        "value": 1709
+      }
+    ],
+    "credits": [
+      {
+        "id": 2014,
+        "service": "ELECTRICITY",
+        "counter": "3226380",
+        "credit": -0.55
+      }
+    ]
+  },
+  {
+    "id": 2027,
+    "number": "1113 = 160/Д",
+    "owner": "Воронюк Валентин Васильович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 2160,
+        "factoryNumber": "10016216",
+        "value": 1900
+      },
+      {
+        "id": 2161,
+        "factoryNumber": "3226339",
+        "value": 643
+      }
+    ],
+    "credits": [
+      {
+        "id": 2027,
+        "service": "ELECTRICITY",
+        "counter": "10016216",
+        "credit": -0.3
+      },
+      {
+        "id": 2027,
+        "service": "ELECTRICITY",
+        "counter": "3226339",
+        "credit": -0.85
+      }
+    ]
+  },
+  {
+    "id": 2029,
+    "number": "1112 = 8991/С",
+    "owner": "Баранюк Юрій Володимирович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 2163,
+        "factoryNumber": "10016221",
+        "value": 1547
+      },
+      {
+        "id": 2164,
+        "factoryNumber": "3226346",
+        "value": 908
+      }
+    ],
+    "credits": [
+      {
+        "id": 2029,
+        "service": "ELECTRICITY",
+        "counter": "10016221",
+        "credit": -0.01
+      },
+      {
+        "id": 2029,
+        "service": "ELECTRICITY",
+        "counter": "3226346",
+        "credit": -0.71
+      }
+    ]
+  },
+  {
+    "id": 2045,
+    "number": "1104 С = 2192/4тс",
+    "owner": "Требиш Василь Пантелейович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 2182,
+        "factoryNumber": "10030875",
+        "value": 1083
+      }
+    ],
+    "credits": [
+      {
+        "id": 2045,
+        "service": "ELECTRICITY",
+        "counter": "10030875",
+        "credit": -0.09
+      }
+    ]
+  },
+  {
+    "id": 2062,
+    "number": "110 С = 2917/3тс",
+    "owner": "Скурчинський Володимир Ярославович",
+    "sectorNumber": 3,
+    "counters": [
+      {
+        "id": 2200,
+        "factoryNumber": "10058240",
+        "value": 551
+      }
+    ],
+    "credits": [
+      {
+        "id": 2062,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 521.0
+      },
+      {
+        "id": 2062,
+        "service": "ELECTRICITY",
+        "counter": "10058240",
+        "credit": 11.28
+      },
+      {
+        "id": 2062,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      }
+    ]
+  },
+  {
+    "id": 2070,
+    "number": "1116 = 8736/С",
+    "owner": "Цегельник Вадим Олександрович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 2209,
+        "factoryNumber": "10070328",
+        "value": 2319
+      },
+      {
+        "id": 2210,
+        "factoryNumber": "10001033",
+        "value": 1773
+      }
+    ],
+    "credits": [
+      {
+        "id": 2070,
+        "service": "ELECTRICITY",
+        "counter": "10001033",
+        "credit": -0.75
+      },
+      {
+        "id": 2070,
+        "service": "ELECTRICITY",
+        "counter": "10070328",
+        "credit": -0.96
+      }
+    ]
+  },
+  {
+    "id": 2085,
+    "number": "116 В А = 172-вес/1тс",
+    "owner": "Королянчук Любов Троянівна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 2225,
+        "factoryNumber": "10097736",
+        "value": 4639
+      }
+    ],
+    "credits": [
+      {
+        "id": 2085,
+        "service": "ELECTRICITY",
+        "counter": "10097736",
+        "credit": -0.49
+      },
+      {
+        "id": 2085,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": -1.0
+      }
+    ]
+  },
+  {
+    "id": 2086,
+    "number": "119 = 58/8тс",
+    "owner": "Мудра Жанна Мойсеївна",
+    "sectorNumber": 8,
+    "counters": [
+      {
+        "id": 2226,
+        "factoryNumber": "10090226",
+        "value": 2141
+      }
+    ],
+    "credits": [
+      {
+        "id": 2086,
+        "service": "ELECTRICITY",
+        "counter": "10090226",
+        "credit": -0.12
+      },
+      {
+        "id": 2086,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "id": 2090,
+    "number": "118 В А = 3220/1тс",
+    "owner": "Пентелейчук Георгій Миколайович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 2231,
+        "factoryNumber": "10110449",
+        "value": 11788
+      }
+    ],
+    "credits": [
+      {
+        "id": 2090,
+        "service": "ELECTRICITY",
+        "counter": "10110449",
+        "credit": -0.33
+      },
+      {
+        "id": 2090,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 96.0
+      },
+      {
+        "id": 2090,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 1092.0
+      }
+    ]
+  },
+  {
+    "id": 2129,
+    "number": "113 = 206 (кв)",
+    "owner": "Падуке-Фрiзюк Петруня Дмитрiвн",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 2273,
+        "factoryNumber": "10128905",
+        "value": 1007
+      }
+    ],
+    "credits": [
+      {
+        "id": 2129,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 275.0
+      },
+      {
+        "id": 2129,
+        "service": "ELECTRICITY",
+        "counter": "10128905",
+        "credit": 19.67
+      }
+    ]
+  },
+  {
+    "id": 2136,
+    "number": "114 = 207 (кв)",
+    "owner": "Падуке-Фрiзюк Петруня Дмитрiвн",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 2280,
+        "factoryNumber": "10134431",
+        "value": 2324
+      }
+    ],
+    "credits": [
+      {
+        "id": 2136,
+        "service": "ELECTRICITY",
+        "counter": "10134431",
+        "credit": 19.65
+      },
+      {
+        "id": 2136,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 275.0
+      }
+    ]
+  },
+  {
+    "id": 2139,
+    "number": "11 А = 2556/2тс",
+    "owner": "Крупенний Павло Васильович",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 2283,
+        "factoryNumber": "10132684",
+        "value": 1801
+      }
+    ],
+    "credits": [
+      {
+        "id": 2139,
+        "service": "ELECTRICITY",
+        "counter": "10132684",
+        "credit": 19.89
+      },
+      {
+        "id": 2139,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 2139,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 470.0
+      }
+    ]
+  },
+  {
+    "id": 2162,
+    "number": "1113 = 1101 (к)",
+    "owner": "Магалевич Анатолій Васильович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 2308,
+        "factoryNumber": "11004109",
+        "value": 544
+      }
+    ],
+    "credits": [
+      {
+        "id": 2162,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 275.0
+      },
+      {
+        "id": 2162,
+        "service": "ELECTRICITY",
+        "counter": "11004109",
+        "credit": 8.1
+      }
+    ]
+  },
+  {
+    "id": 2220,
+    "number": "113 \"З\" = 2237-к/1тс",
+    "owner": "Загара Аліна Василівна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 2368,
+        "factoryNumber": "12213477",
+        "value": 3189
+      }
+    ],
+    "credits": [
+      {
+        "id": 2220,
+        "service": "ELECTRICITY",
+        "counter": "12213477",
+        "credit": 107.06
+      },
+      {
+        "id": 2220,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 2220,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "id": 2360,
+    "number": "116 = 2385/2тс",
+    "owner": "Мурашко Марія Миколаївна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 2520,
+        "factoryNumber": "20100104594",
+        "value": 944
+      }
+    ],
+    "credits": [
+      {
+        "id": 2360,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 491.0
+      },
+      {
+        "id": 2360,
+        "service": "ELECTRICITY",
+        "counter": "20100104594",
+        "credit": 69.54
+      },
+      {
+        "id": 2360,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      }
+    ]
+  },
+  {
+    "id": 2363,
+    "number": "119 = 142 (кв)",
+    "owner": "Солом\"ян Олена Василiвна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 2523,
+        "factoryNumber": "20100104666",
+        "value": 2055
+      }
+    ],
+    "credits": [
+      {
+        "id": 2363,
+        "service": "ELECTRICITY",
+        "counter": "20100104666",
+        "credit": 95.78
+      },
+      {
+        "id": 2363,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 275.0
+      }
+    ]
+  },
+  {
+    "id": 2429,
+    "number": "1189 = 57/1тс",
+    "owner": "Подолян Сергій Васильович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 2590,
+        "factoryNumber": "20111003182",
+        "value": 267
+      }
+    ],
+    "credits": [
+      {
+        "id": 2429,
+        "service": "ELECTRICITY",
+        "counter": "20111003182",
+        "credit": -0.18
+      },
+      {
+        "id": 2429,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 275.0
+      }
+    ]
+  },
+  {
+    "id": 2488,
+    "number": "1177 = 247 (к)",
+    "owner": "Голодняк Володимир Васильович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 2650,
+        "factoryNumber": "201201007827",
+        "value": 1
+      }
+    ],
+    "credits": [
+      {
+        "id": 2488,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 275.0
+      }
+    ]
+  },
+  {
+    "id": 2498,
+    "number": "1165 = 1251/6тс",
+    "owner": "Спренчинат Ірина Георгіївна",
+    "sectorNumber": 6,
+    "counters": [
+      {
+        "id": 2660,
+        "factoryNumber": "201202001215",
+        "value": 90
+      }
+    ],
+    "credits": [
+      {
+        "id": 2498,
+        "service": "ELECTRICITY",
+        "counter": "201202001215",
+        "credit": -0.16
+      },
+      {
+        "id": 2498,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 2498,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 899.5
+      }
+    ]
+  },
+  {
+    "id": 2502,
+    "number": "1133 = 2290/1тс",
+    "owner": "Григорій Світлана Василівна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 2664,
+        "factoryNumber": "201202003524",
+        "value": 596
+      }
+    ],
+    "credits": [
+      {
+        "id": 2502,
+        "service": "ELECTRICITY",
+        "counter": "201202003524",
+        "credit": 45.71
+      },
+      {
+        "id": 2502,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 2502,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 275.0
+      }
+    ]
+  },
+  {
+    "id": 2530,
+    "number": "113 Б = 2285/2тс",
+    "owner": "Мартинова Людмила Василiвна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 2692,
+        "factoryNumber": "201202003700",
+        "value": 395
+      }
+    ],
+    "credits": [
+      {
+        "id": 2530,
+        "service": "ELECTRICITY",
+        "counter": "201202003700",
+        "credit": 25.38
+      },
+      {
+        "id": 2530,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 2530,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 345.0
+      }
+    ]
+  },
+  {
+    "id": 2662,
+    "number": "11 Т С = 542/4тс",
+    "owner": "Григорчук Родіка Петрівна",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 2826,
+        "factoryNumber": "201301015633",
+        "value": 947
+      }
+    ],
+    "credits": [
+      {
+        "id": 2662,
+        "service": "ELECTRICITY",
+        "counter": "201301015633",
+        "credit": 34.39
+      },
+      {
+        "id": 2662,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 2662,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 434.0
+      }
+    ]
+  },
+  {
+    "id": 2702,
+    "number": "1114 = 1607 (к)",
+    "owner": "Поліщук Валерій Анатолійович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 2870,
+        "factoryNumber": "201302006386",
+        "value": 633
+      }
+    ],
+    "credits": [
+      {
+        "id": 2702,
+        "service": "ELECTRICITY",
+        "counter": "201302006386",
+        "credit": 174.94
+      },
+      {
+        "id": 2702,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 441.0
+      }
+    ]
+  },
+  {
+    "id": 2775,
+    "number": "115 С = 867/3тс",
+    "owner": "Попадюк Зiна Олександрiвна",
+    "sectorNumber": 3,
+    "counters": [
+      {
+        "id": 2949,
+        "factoryNumber": "201401007080",
+        "value": 114
+      }
+    ],
+    "credits": [
+      {
+        "id": 2775,
+        "service": "ELECTRICITY",
+        "counter": "201401007080",
+        "credit": 28.35
+      },
+      {
+        "id": 2775,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 2775,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 515.0
+      }
+    ]
+  },
+  {
+    "id": 2887,
+    "number": "118 АР = 466/6тс",
+    "owner": "Гордійчук Андрій Іванович",
+    "sectorNumber": 6,
+    "counters": [
+      {
+        "id": 3066,
+        "factoryNumber": "5684084",
+        "value": 306
+      }
+    ],
+    "credits": [
+      {
+        "id": 2887,
+        "service": "ELECTRICITY",
+        "counter": "5684084",
+        "credit": -0.71
+      },
+      {
+        "id": 2887,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 248.0
+      }
+    ]
+  },
+  {
+    "id": 2898,
+    "number": "11 К = 83",
+    "owner": "Цікал Віталій Мірчович",
+    "sectorNumber": 3,
+    "counters": [
+      {
+        "id": 3077,
+        "factoryNumber": "09160990",
+        "value": 4491
+      },
+      {
+        "id": 3078,
+        "factoryNumber": "09158543",
+        "value": 25580
+      }
+    ],
+    "credits": [
+      {
+        "id": 2898,
+        "service": "ELECTRICITY",
+        "counter": "09158543",
+        "credit": 946.99
+      },
+      {
+        "id": 2898,
+        "service": "ELECTRICITY",
+        "counter": "09160990",
+        "credit": 197.85
+      },
+      {
+        "id": 2898,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 2898,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 2726.0
+      }
+    ]
+  },
+  {
+    "id": 2905,
+    "number": "110 = 1400-ко/2тс",
+    "owner": "Ілащук Наталія Степанівна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 3085,
+        "factoryNumber": "201202005461",
+        "value": 297
+      }
+    ],
+    "credits": [
+      {
+        "id": 2905,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 491.0
+      },
+      {
+        "id": 2905,
+        "service": "ELECTRICITY",
+        "counter": "201202005461",
+        "credit": 11.17
+      }
+    ]
+  },
+  {
+    "id": 2915,
+    "number": "110 АР = 78/6тс",
+    "owner": "Швець Анатолій Васильович",
+    "sectorNumber": 6,
+    "counters": [
+      {
+        "id": 3095,
+        "factoryNumber": "201201015882",
+        "value": 1396
+      }
+    ],
+    "credits": [
+      {
+        "id": 2915,
+        "service": "ELECTRICITY",
+        "counter": "201201015882",
+        "credit": 218.23
+      },
+      {
+        "id": 2915,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 2915,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 248.0
+      }
+    ]
+  },
+  {
+    "id": 2932,
+    "number": "110 С = 973/1тс ОПР",
+    "owner": "Літовська Леся Євгенівна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 3115,
+        "factoryNumber": "201201003202",
+        "value": 2254
+      }
+    ],
+    "credits": [
+      {
+        "id": 2932,
+        "service": "ELECTRICITY",
+        "counter": "201201003202",
+        "credit": 148.1
+      },
+      {
+        "id": 2932,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 2932,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 1074.0
+      }
+    ]
+  },
+  {
+    "id": 2951,
+    "number": "1109 = 161/Д",
+    "owner": "Воронюк Валентин Васильович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 3134,
+        "factoryNumber": "3226372",
+        "value": 470
+      },
+      {
+        "id": 3135,
+        "factoryNumber": "10014079",
+        "value": 1730
+      }
+    ],
+    "credits": [
+      {
+        "id": 2951,
+        "service": "ELECTRICITY",
+        "counter": "3226372",
+        "credit": -0.21
+      },
+      {
+        "id": 2951,
+        "service": "ELECTRICITY",
+        "counter": "10014079",
+        "credit": -0.14
+      }
+    ]
+  },
+  {
+    "id": 2953,
+    "number": "111 = 284-к/5тс",
+    "owner": "Мисевич Ігор Захарович",
+    "sectorNumber": 5,
+    "counters": [
+      {
+        "id": 3137,
+        "factoryNumber": "09136312",
+        "value": 16032
+      }
+    ],
+    "credits": [
+      {
+        "id": 2953,
+        "service": "ELECTRICITY",
+        "counter": "09136312",
+        "credit": 40.06
+      },
+      {
+        "id": 2953,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 2953,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "id": 2981,
+    "number": "111 \"З\" = 2134/1тс",
+    "owner": "Голда Олександр Валерійович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 3165,
+        "factoryNumber": "8065071",
+        "value": 1844
+      }
+    ],
+    "credits": [
+      {
+        "id": 2981,
+        "service": "ELECTRICITY",
+        "counter": "8065071",
+        "credit": 49.46
+      },
+      {
+        "id": 2981,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 2981,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "id": 3038,
+    "number": "112 А = 2783/2тс",
+    "owner": "Костинян Катерина Миколаївна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 3223,
+        "factoryNumber": "09158470",
+        "value": 1940
+      }
+    ],
+    "credits": [
+      {
+        "id": 3038,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 689.0
+      },
+      {
+        "id": 3038,
+        "service": "ELECTRICITY",
+        "counter": "09158470",
+        "credit": 17.41
+      },
+      {
+        "id": 3038,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      }
+    ]
+  },
+  {
+    "id": 3045,
+    "number": "1102 Р С = 7431/С",
+    "owner": "Требиш Юрій Васильович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 3230,
+        "factoryNumber": "810450",
+        "value": 1431
+      }
+    ],
+    "credits": [
+      {
+        "id": 3045,
+        "service": "ELECTRICITY",
+        "counter": "810450",
+        "credit": -0.38
+      }
+    ]
+  },
+  {
+    "id": 3060,
+    "number": "11 \"З\" С = 2913/1тс",
+    "owner": "Штефуряк Володимир Васильович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 3246,
+        "factoryNumber": "8170549",
+        "value": 4658
+      }
+    ],
+    "credits": [
+      {
+        "id": 3060,
+        "service": "ELECTRICITY",
+        "counter": "8170549",
+        "credit": 37.84
+      },
+      {
+        "id": 3060,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3060,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 881.0
+      }
+    ]
+  },
+  {
+    "id": 3069,
+    "number": "111 = 1818/1тс",
+    "owner": "Кітік Михайло Леонтійович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 3255,
+        "factoryNumber": "8170964",
+        "value": 7275
+      }
+    ],
+    "credits": [
+      {
+        "id": 3069,
+        "service": "ELECTRICITY",
+        "counter": "8170964",
+        "credit": 495.11
+      },
+      {
+        "id": 3069,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3069,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "id": 3093,
+    "number": "115 = 436/5тс ОПР",
+    "owner": "Чистова Павліна Олександрівна",
+    "sectorNumber": 5,
+    "counters": [
+      {
+        "id": 3279,
+        "factoryNumber": "2640763",
+        "value": 12600
+      }
+    ],
+    "credits": []
+  },
+  {
+    "id": 3100,
+    "number": "115 Р = 733/2тс ОПР",
+    "owner": "Бовконюк Людмила Василiвна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 3286,
+        "factoryNumber": "2205290",
+        "value": 817
+      }
+    ],
+    "credits": [
+      {
+        "id": 3100,
+        "service": "ELECTRICITY",
+        "counter": "2205290",
+        "credit": 83.73
+      },
+      {
+        "id": 3100,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3100,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 689.0
+      }
+    ]
+  },
+  {
+    "id": 3102,
+    "number": "116 М = 1642/С/1 тс",
+    "owner": "Погарцев Олександр Леонідович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 3288,
+        "factoryNumber": "8881276",
+        "value": 12241
+      }
+    ],
+    "credits": [
+      {
+        "id": 3102,
+        "service": "ELECTRICITY",
+        "counter": "8881276",
+        "credit": 1419.68
+      },
+      {
+        "id": 3102,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3102,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 527.5
+      }
+    ]
+  },
+  {
+    "id": 3205,
+    "number": "117 В = 2500/1тс",
+    "owner": "Требиш Василь Пантелейович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 3397,
+        "factoryNumber": "9879189",
+        "value": 3810
+      },
+      {
+        "id": 3398,
+        "factoryNumber": "10097205",
+        "value": 7800
+      }
+    ],
+    "credits": [
+      {
+        "id": 3205,
+        "service": "ELECTRICITY",
+        "counter": "9879189",
+        "credit": -0.73
+      },
+      {
+        "id": 3205,
+        "service": "ELECTRICITY",
+        "counter": "10097205",
+        "credit": -0.19
+      }
+    ]
+  },
+  {
+    "id": 3289,
+    "number": "118 = 2757/2тс",
+    "owner": "Філатов Валерій Владиславович",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 3490,
+        "factoryNumber": "09142604",
+        "value": 6386
+      }
+    ],
+    "credits": [
+      {
+        "id": 3289,
+        "service": "ELECTRICITY",
+        "counter": "09142604",
+        "credit": -0.52
+      }
+    ]
+  },
+  {
+    "id": 3362,
+    "number": "11 Д С = 1831/2тс ОПР",
+    "owner": "Чос Галина Михайлівна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 3568,
+        "factoryNumber": "09092547",
+        "value": 2209
+      }
+    ],
+    "credits": [
+      {
+        "id": 3362,
+        "service": "ELECTRICITY",
+        "counter": "09092547",
+        "credit": -0.91
+      }
+    ]
+  },
+  {
+    "id": 3390,
+    "number": "11 = 2643/1тс",
+    "owner": "Мінтенко Анастасія Олександрів",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 3597,
+        "factoryNumber": "201101001646",
+        "value": 361
+      }
+    ],
+    "credits": [
+      {
+        "id": 3390,
+        "service": "ELECTRICITY",
+        "counter": "201101001646",
+        "credit": 11.58
+      },
+      {
+        "id": 3390,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3390,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 275.0
+      }
+    ]
+  },
+  {
+    "id": 3426,
+    "number": "117 М = 2609/1тс",
+    "owner": "Кривенко Анатолій Олександрович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 3633,
+        "factoryNumber": "0561640",
+        "value": 3058
+      }
+    ],
+    "credits": [
+      {
+        "id": 3426,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3426,
+        "service": "ELECTRICITY",
+        "counter": "0561640",
+        "credit": 1148.05
+      },
+      {
+        "id": 3426,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 528.0
+      }
+    ]
+  },
+  {
+    "id": 3458,
+    "number": "11 М = 4675/С  ОПР",
+    "owner": "Ілащук Наталія Степанівна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 3665,
+        "factoryNumber": "0642057",
+        "value": 193423
+      }
+    ],
+    "credits": [
+      {
+        "id": 3458,
+        "service": "ELECTRICITY",
+        "counter": "0642057",
+        "credit": 11116.45
+      },
+      {
+        "id": 3458,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3458,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 4278.0
+      }
+    ]
+  },
+  {
+    "id": 3459,
+    "number": "11 А = 2776/В ОПР",
+    "owner": "Ракоча Оксана Дмитрівна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 3666,
+        "factoryNumber": "0603490402540575",
+        "value": 6420
+      }
+    ],
+    "credits": [
+      {
+        "id": 3459,
+        "service": "ELECTRICITY",
+        "counter": "0603490402540575",
+        "credit": 133.99
+      },
+      {
+        "id": 3459,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3459,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 689.0
+      }
+    ]
+  },
+  {
+    "id": 3484,
+    "number": "114 Р = 2055/В",
+    "owner": "Покиданець Людмила Василівна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 3692,
+        "factoryNumber": "09098353",
+        "value": 3887
+      }
+    ],
+    "credits": [
+      {
+        "id": 3484,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3484,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 689.0
+      },
+      {
+        "id": 3484,
+        "service": "ELECTRICITY",
+        "counter": "09098353",
+        "credit": 16.39
+      }
+    ]
+  },
+  {
+    "id": 3491,
+    "number": "1131 = 1272 (к)",
+    "owner": "Дмитрів Орися Михайлівна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 3699,
+        "factoryNumber": "20100102693",
+        "value": 680
+      }
+    ],
+    "credits": [
+      {
+        "id": 3491,
+        "service": "ELECTRICITY",
+        "counter": "20100102693",
+        "credit": -0.97
+      },
+      {
+        "id": 3491,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 275.0
+      }
+    ]
+  },
+  {
+    "id": 3492,
+    "number": "115 = 1286/6тс",
+    "owner": "Фукаревич Болеслав Вікторович",
+    "sectorNumber": 6,
+    "counters": [
+      {
+        "id": 3700,
+        "factoryNumber": "20451035",
+        "value": 35796
+      }
+    ],
+    "credits": [
+      {
+        "id": 3492,
+        "service": "ELECTRICITY",
+        "counter": "20451035",
+        "credit": 570.98
+      },
+      {
+        "id": 3492,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3492,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 5882.0
+      }
+    ]
+  },
+  {
+    "id": 3494,
+    "number": "114 А = 2277/В",
+    "owner": "Арсенiй Валентина Миколаївна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 3703,
+        "factoryNumber": "5081767",
+        "value": 1186
+      }
+    ],
+    "credits": [
+      {
+        "id": 3494,
+        "service": "ELECTRICITY",
+        "counter": "5081767",
+        "credit": 25.41
+      },
+      {
+        "id": 3494,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3494,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 689.0
+      }
+    ]
+  },
+  {
+    "id": 3495,
+    "number": "115 А \"З\" С = 7184/С",
+    "owner": "Туржанська Світлана Миколаївна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 3704,
+        "factoryNumber": "524913",
+        "value": 2327
+      }
+    ],
+    "credits": [
+      {
+        "id": 3495,
+        "service": "ELECTRICITY",
+        "counter": "524913",
+        "credit": -0.77
+      }
+    ]
+  },
+  {
+    "id": 3500,
+    "number": "114 С = 5244/С",
+    "owner": "Дашкевич Юрій Іванович",
+    "sectorNumber": 3,
+    "counters": [
+      {
+        "id": 3709,
+        "factoryNumber": "92023399",
+        "value": 8577
+      }
+    ],
+    "credits": [
+      {
+        "id": 3500,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 947.0
+      },
+      {
+        "id": 3500,
+        "service": "ELECTRICITY",
+        "counter": "92023399",
+        "credit": 107.66
+      },
+      {
+        "id": 3500,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      }
+    ]
+  },
+  {
+    "id": 3501,
+    "number": "116 С = 197/8тс",
+    "owner": "Мудряк Олена Ярославівна",
+    "sectorNumber": 8,
+    "counters": [
+      {
+        "id": 3710,
+        "factoryNumber": "2279583",
+        "value": 1968
+      }
+    ],
+    "credits": [
+      {
+        "id": 3501,
+        "service": "ELECTRICITY",
+        "counter": "2279583",
+        "credit": 69.86
+      },
+      {
+        "id": 3501,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 890.0
+      }
+    ]
+  },
+  {
+    "id": 3502,
+    "number": "111 Р = 1932/В",
+    "owner": "Будзан Зоряна Зіновіївна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 3711,
+        "factoryNumber": "09142706",
+        "value": 1430
+      }
+    ],
+    "credits": [
+      {
+        "id": 3502,
+        "service": "ELECTRICITY",
+        "counter": "09142706",
+        "credit": 46.11
+      },
+      {
+        "id": 3502,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3502,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 689.0
+      }
+    ]
+  },
+  {
+    "id": 3505,
+    "number": "113 А = 2421/В",
+    "owner": "Головач Альона Юріївна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 3714,
+        "factoryNumber": "4831083",
+        "value": 240
+      }
+    ],
+    "credits": [
+      {
+        "id": 3505,
+        "service": "ELECTRICITY",
+        "counter": "4831083",
+        "credit": -0.44
+      },
+      {
+        "id": 3505,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3505,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 345.0
+      }
+    ]
+  },
+  {
+    "id": 3523,
+    "number": "118 В Р = 167-вес/1тс",
+    "owner": "Федорюк Василина Пантелеївна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 3733,
+        "factoryNumber": "9879233",
+        "value": 2817
+      }
+    ],
+    "credits": [
+      {
+        "id": 3523,
+        "service": "ELECTRICITY",
+        "counter": "9879233",
+        "credit": -0.58
+      }
+    ]
+  },
+  {
+    "id": 3686,
+    "number": "11 ТД = 498/Д",
+    "owner": "ТОВ \"ФІК \"Сіті-інвест\"",
+    "sectorNumber": 8,
+    "counters": [
+      {
+        "id": 3900,
+        "factoryNumber": "06863511-10",
+        "value": 29448
+      }
+    ],
+    "credits": [
+      {
+        "id": 3686,
+        "service": "ELECTRICITY",
+        "counter": "06863511-10",
+        "credit": 1592.04
+      },
+      {
+        "id": 3686,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 5182.12
+      }
+    ]
+  },
+  {
+    "id": 3713,
+    "number": "1100 С = 7406/С",
+    "owner": "Требиш Василь Пантелейович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 3927,
+        "factoryNumber": "08250062",
+        "value": 6957
+      }
+    ],
+    "credits": [
+      {
+        "id": 3713,
+        "service": "ELECTRICITY",
+        "counter": "08250062",
+        "credit": -0.98
+      }
+    ]
+  },
+  {
+    "id": 3723,
+    "number": "113 = 2343/2тс",
+    "owner": "Крикун Людмила Аксентiївна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 3938,
+        "factoryNumber": "09001405",
+        "value": 884
+      }
+    ],
+    "credits": [
+      {
+        "id": 3723,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3723,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 252.0
+      }
+    ]
+  },
+  {
+    "id": 3733,
+    "number": "114 В = 2408/1тс",
+    "owner": "Ільчук Сніжана Павлівна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 3948,
+        "factoryNumber": "09009311",
+        "value": 7376
+      }
+    ],
+    "credits": [
+      {
+        "id": 3733,
+        "service": "ELECTRICITY",
+        "counter": "09009311",
+        "credit": -0.69
+      },
+      {
+        "id": 3733,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3733,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 536.0
+      }
+    ]
+  },
+  {
+    "id": 3740,
+    "number": "11 С = 1787/1тс",
+    "owner": "Казак Олена Василівна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 3955,
+        "factoryNumber": "09029388",
+        "value": 12016
+      }
+    ],
+    "credits": [
+      {
+        "id": 3740,
+        "service": "ELECTRICITY",
+        "counter": "09029388",
+        "credit": 614.47
+      },
+      {
+        "id": 3740,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3740,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 579.0
+      }
+    ]
+  },
+  {
+    "id": 3811,
+    "number": "116 Р = 2207/2тс",
+    "owner": "Косован Юрій Дмитрович",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 4026,
+        "factoryNumber": "09092721",
+        "value": 1020
+      }
+    ],
+    "credits": [
+      {
+        "id": 3811,
+        "service": "ELECTRICITY",
+        "counter": "09092721",
+        "credit": 77.99
+      },
+      {
+        "id": 3811,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3811,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 689.0
+      }
+    ]
+  },
+  {
+    "id": 3910,
+    "number": "112 = 397-к/5тс",
+    "owner": "Ряба Людмила Іванівна",
+    "sectorNumber": 5,
+    "counters": [
+      {
+        "id": 4129,
+        "factoryNumber": "09160908",
+        "value": 17538
+      }
+    ],
+    "credits": [
+      {
+        "id": 3910,
+        "service": "ELECTRICITY",
+        "counter": "09160908",
+        "credit": 247.74
+      },
+      {
+        "id": 3910,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3910,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "id": 3944,
+    "number": "110 С = 488/5тс ОПР",
+    "owner": "Вітюк Ілля Миколайович",
+    "sectorNumber": 5,
+    "counters": [
+      {
+        "id": 4164,
+        "factoryNumber": "09214004",
+        "value": 27676
+      },
+      {
+        "id": 4165,
+        "factoryNumber": "16008579",
+        "value": 0
+      }
+    ],
+    "credits": [
+      {
+        "id": 3944,
+        "service": "ELECTRICITY",
+        "counter": "09214004",
+        "credit": 111.54
+      },
+      {
+        "id": 3944,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3944,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 881.0
+      }
+    ]
+  },
+  {
+    "id": 3955,
+    "number": "11 Б = 1597/2тс",
+    "owner": "Кілігой Євгенія Петрівна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 4176,
+        "factoryNumber": "12303741",
+        "value": 16103
+      }
+    ],
+    "credits": [
+      {
+        "id": 3955,
+        "service": "ELECTRICITY",
+        "counter": "12303741",
+        "credit": -0.99
+      }
+    ]
+  },
+  {
+    "id": 3958,
+    "number": "119 А = 2114/2тс",
+    "owner": "Білик Наталія Василівна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 4179,
+        "factoryNumber": "1321139",
+        "value": 3010
+      }
+    ],
+    "credits": [
+      {
+        "id": 3958,
+        "service": "ELECTRICITY",
+        "counter": "1321139",
+        "credit": 460.24
+      },
+      {
+        "id": 3958,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3958,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 689.0
+      }
+    ]
+  },
+  {
+    "id": 3964,
+    "number": "111 С = 1408/4тс",
+    "owner": "Столярчук Василь Михайлович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 4185,
+        "factoryNumber": "1339362",
+        "value": 8753
+      }
+    ],
+    "credits": [
+      {
+        "id": 3964,
+        "service": "ELECTRICITY",
+        "counter": "1339362",
+        "credit": 139.52
+      },
+      {
+        "id": 3964,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3964,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 865.0
+      }
+    ]
+  },
+  {
+    "id": 3968,
+    "number": "11 П = 2892/3тс",
+    "owner": "Голбан Олександр Васильович",
+    "sectorNumber": 3,
+    "counters": [
+      {
+        "id": 4189,
+        "factoryNumber": "1513796",
+        "value": 7562
+      }
+    ],
+    "credits": [
+      {
+        "id": 3968,
+        "service": "ELECTRICITY",
+        "counter": "1513796",
+        "credit": 159.91
+      },
+      {
+        "id": 3968,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3968,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 1136.0
+      }
+    ]
+  },
+  {
+    "id": 3972,
+    "number": "118 = 2107/4тс",
+    "owner": "Соболєва Олена Iванiвна",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 4193,
+        "factoryNumber": "201101002809",
+        "value": 160
+      }
+    ],
+    "credits": [
+      {
+        "id": 3972,
+        "service": "ELECTRICITY",
+        "counter": "201101002809",
+        "credit": -0.94
+      },
+      {
+        "id": 3972,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      }
+    ]
+  },
+  {
+    "id": 3976,
+    "number": "1107 С = 2975/4тс",
+    "owner": "Гладиш Вiталiй Йосип-Ярославович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 4197,
+        "factoryNumber": "201101008860",
+        "value": 297
+      }
+    ],
+    "credits": [
+      {
+        "id": 3976,
+        "service": "ELECTRICITY",
+        "counter": "201101008860",
+        "credit": 10.88
+      },
+      {
+        "id": 3976,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3976,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 925.0
+      }
+    ]
+  },
+  {
+    "id": 3982,
+    "number": "1112 = 2611/1тс БПП",
+    "owner": "Оленюк Денис Михайлович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 4203,
+        "factoryNumber": "201202003359",
+        "value": 3963
+      }
+    ],
+    "credits": [
+      {
+        "id": 3982,
+        "service": "ELECTRICITY",
+        "counter": "201202003359",
+        "credit": 469.43
+      },
+      {
+        "id": 3982,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 3982,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 275.0
+      }
+    ]
+  },
+  {
+    "id": 4020,
+    "number": "116 С = 6386/С",
+    "owner": "Павлінська Лілія Василівна",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 4241,
+        "factoryNumber": "559107",
+        "value": 393
+      }
+    ],
+    "credits": [
+      {
+        "id": 4020,
+        "service": "ELECTRICITY",
+        "counter": "559107",
+        "credit": -0.79
+      }
+    ]
+  },
+  {
+    "id": 4027,
+    "number": "1102 А С = 2099/4тс",
+    "owner": "Бурба Неля Євгенівна",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 4248,
+        "factoryNumber": "6104450",
+        "value": 5665
+      }
+    ],
+    "credits": [
+      {
+        "id": 4027,
+        "service": "ELECTRICITY",
+        "counter": "6104450",
+        "credit": -0.67
+      }
+    ]
+  },
+  {
+    "id": 4040,
+    "number": "115 \"З\" С = 1854/1тс",
+    "owner": "Боднарюк Галина Миколаївна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 4261,
+        "factoryNumber": "8068636",
+        "value": 10319
+      }
+    ],
+    "credits": [
+      {
+        "id": 4040,
+        "service": "ELECTRICITY",
+        "counter": "8068636",
+        "credit": 230.11
+      },
+      {
+        "id": 4040,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 4040,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 1785.0
+      }
+    ]
+  },
+  {
+    "id": 4045,
+    "number": "117 \"З\" С = 645/1тс",
+    "owner": "Чернишевський Василь Олексійов",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 4266,
+        "factoryNumber": "8069688",
+        "value": 8394
+      }
+    ],
+    "credits": [
+      {
+        "id": 4045,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 881.0
+      },
+      {
+        "id": 4045,
+        "service": "ELECTRICITY",
+        "counter": "8069688",
+        "credit": 494.83
+      },
+      {
+        "id": 4045,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      }
+    ]
+  },
+  {
+    "id": 4061,
+    "number": "116 В Р = 168-вес/1тс",
+    "owner": "Федорюк Василина Пантелеївна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 4282,
+        "factoryNumber": "9879209",
+        "value": 5740
+      }
+    ],
+    "credits": [
+      {
+        "id": 4061,
+        "service": "ELECTRICITY",
+        "counter": "9879209",
+        "credit": -0.91
+      }
+    ]
+  },
+  {
+    "id": 4121,
+    "number": "1108 = 1810/4тс",
+    "owner": "Требиш Юрій Васильович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 4345,
+        "factoryNumber": "10014486",
+        "value": 4043
+      }
+    ],
+    "credits": [
+      {
+        "id": 4121,
+        "service": "ELECTRICITY",
+        "counter": "10014486",
+        "credit": -0.6
+      }
+    ]
+  },
+  {
+    "id": 4167,
+    "number": "119 С = 421/5тс",
+    "owner": "Юрчук Сергій Володимирович",
+    "sectorNumber": 5,
+    "counters": [
+      {
+        "id": 4392,
+        "factoryNumber": "201401009118",
+        "value": 958
+      }
+    ],
+    "credits": [
+      {
+        "id": 4167,
+        "service": "ELECTRICITY",
+        "counter": "201401009118",
+        "credit": -0.78
+      }
+    ]
+  },
+  {
+    "id": 4199,
+    "number": "112 = 1958/4тс",
+    "owner": "Магнич Микола Васильович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 4426,
+        "factoryNumber": "09055277",
+        "value": 1437
+      }
+    ],
+    "credits": [
+      {
+        "id": 4199,
+        "service": "ELECTRICITY",
+        "counter": "09055277",
+        "credit": -0.55
+      }
+    ]
+  },
+  {
+    "id": 4230,
+    "number": "11/1 = 2731/3тс",
+    "owner": "Єрохіна Світлана Василівна",
+    "sectorNumber": 3,
+    "counters": [
+      {
+        "id": 4459,
+        "factoryNumber": "5681313",
+        "value": 4220
+      }
+    ],
+    "credits": [
+      {
+        "id": 4230,
+        "service": "ELECTRICITY",
+        "counter": "5681313",
+        "credit": 2.12
+      },
+      {
+        "id": 4230,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 4230,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 252.0
+      }
+    ]
+  },
+  {
+    "id": 4388,
+    "number": "114 = 555/5тс",
+    "owner": "Березюк Олексій Володимирович",
+    "sectorNumber": 5,
+    "counters": [
+      {
+        "id": 4625,
+        "factoryNumber": "94232262",
+        "value": 0
+      },
+      {
+        "id": 4626,
+        "factoryNumber": "201401020132",
+        "value": 952
+      }
+    ],
+    "credits": [
+      {
+        "id": 4388,
+        "service": "ELECTRICITY",
+        "counter": "201401020132",
+        "credit": 148.64
+      },
+      {
+        "id": 4388,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 4388,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "id": 4460,
+    "number": "11 Б = 1355/2тс",
+    "owner": "Ніколенко Тетяна Іванівна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 4703,
+        "factoryNumber": "20100104697",
+        "value": 126
+      }
+    ],
+    "credits": [
+      {
+        "id": 4460,
+        "service": "ELECTRICITY",
+        "counter": "20100104697",
+        "credit": -0.98
+      },
+      {
+        "id": 4460,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 4460,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 470.0
+      }
+    ]
+  },
+  {
+    "id": 4468,
+    "number": "1159 = 433 (к)",
+    "owner": "Гилюк Галина Іванівна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 4711,
+        "factoryNumber": "201401005678 \\кава",
+        "value": 1900
+      },
+      {
+        "id": 4712,
+        "factoryNumber": "0453994",
+        "value": 32793
+      }
+    ],
+    "credits": [
+      {
+        "id": 4468,
+        "service": "ELECTRICITY",
+        "counter": "0453994",
+        "credit": -0.84
+      },
+      {
+        "id": 4468,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 275.0
+      }
+    ]
+  },
+  {
+    "id": 4501,
+    "number": "11 = 2576/1тс",
+    "owner": "Атмунов Вячеслав Григорович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 4746,
+        "factoryNumber": "10086241",
+        "value": 710
+      }
+    ],
+    "credits": [
+      {
+        "id": 4501,
+        "service": "ELECTRICITY",
+        "counter": "10086241",
+        "credit": 72.2
+      },
+      {
+        "id": 4501,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 4501,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 454.0
+      }
+    ]
+  },
+  {
+    "id": 4521,
+    "number": "117 С = 2327/4тс",
+    "owner": "Кердей Гарафіна Тодорівна",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 4766,
+        "factoryNumber": "0712961203183359",
+        "value": 3504
+      }
+    ],
+    "credits": [
+      {
+        "id": 4521,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 4521,
+        "service": "ELECTRICITY",
+        "counter": "0712961203183359",
+        "credit": 55.21
+      },
+      {
+        "id": 4521,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 1008.0
+      }
+    ]
+  },
+  {
+    "id": 4522,
+    "number": "117 = 2371/4тс",
+    "owner": "Каплун Людмила Василівна",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 4767,
+        "factoryNumber": "0708490902830675",
+        "value": 3808
+      }
+    ],
+    "credits": [
+      {
+        "id": 4522,
+        "service": "ELECTRICITY",
+        "counter": "0708490902830675",
+        "credit": 2.5
+      },
+      {
+        "id": 4522,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 4522,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "id": 4524,
+    "number": "115 М = 2228/1тс",
+    "owner": "Штефуряк Василь Васильович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 4769,
+        "factoryNumber": "10011176",
+        "value": 2033
+      }
+    ],
+    "credits": [
+      {
+        "id": 4524,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 528.0
+      },
+      {
+        "id": 4524,
+        "service": "ELECTRICITY",
+        "counter": "10011176",
+        "credit": 270.33
+      },
+      {
+        "id": 4524,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      }
+    ]
+  },
+  {
+    "id": 4527,
+    "number": "11 П = 2248/1тс",
+    "owner": "Гончар Андрій Васильович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 4772,
+        "factoryNumber": "11062831",
+        "value": 898
+      }
+    ],
+    "credits": [
+      {
+        "id": 4527,
+        "service": "ELECTRICITY",
+        "counter": "11062831",
+        "credit": 115.88
+      },
+      {
+        "id": 4527,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 4527,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "id": 4534,
+    "number": "1110 = 9020/С",
+    "owner": "Несторяк Святослав Iванович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 4779,
+        "factoryNumber": "16008455",
+        "value": 260
+      }
+    ],
+    "credits": [
+      {
+        "id": 4534,
+        "service": "ELECTRICITY",
+        "counter": "16008455",
+        "credit": -0.93
+      },
+      {
+        "id": 4534,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": -48.0
+      },
+      {
+        "id": 4534,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": -1147.0
+      }
+    ]
+  },
+  {
+    "id": 4586,
+    "number": "111 М = 2120/1тс",
+    "owner": "Пєстов Олександр Юрійович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 4833,
+        "factoryNumber": "09069054",
+        "value": 2774
+      }
+    ],
+    "credits": [
+      {
+        "id": 4586,
+        "service": "ELECTRICITY",
+        "counter": "09069054",
+        "credit": 623.02
+      },
+      {
+        "id": 4586,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 4586,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 528.0
+      }
+    ]
+  },
+  {
+    "id": 4605,
+    "number": "117 = 1842/2тс",
+    "owner": "Панькевич Наталія Олександрівна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 4854,
+        "factoryNumber": "09093554",
+        "value": 1988
+      }
+    ],
+    "credits": [
+      {
+        "id": 4605,
+        "service": "ELECTRICITY",
+        "counter": "09093554",
+        "credit": 23.14
+      },
+      {
+        "id": 4605,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 4605,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 491.0
+      }
+    ]
+  },
+  {
+    "id": 4720,
+    "number": "112 М = 2402/1тс",
+    "owner": "Чвельов Сергій Миколайович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 4973,
+        "factoryNumber": "09052563",
+        "value": 3113
+      }
+    ],
+    "credits": [
+      {
+        "id": 4720,
+        "service": "ELECTRICITY",
+        "counter": "09052563",
+        "credit": -0.01
+      }
+    ]
+  },
+  {
+    "id": 4755,
+    "number": "115 С =  2143/3тс",
+    "owner": "Гасимова Галина Львівна",
+    "sectorNumber": 3,
+    "counters": [
+      {
+        "id": 5008,
+        "factoryNumber": "09092062",
+        "value": 5712
+      }
+    ],
+    "credits": [
+      {
+        "id": 4755,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 959.0
+      },
+      {
+        "id": 4755,
+        "service": "ELECTRICITY",
+        "counter": "09092062",
+        "credit": 29.0
+      },
+      {
+        "id": 4755,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      }
+    ]
+  },
+  {
+    "id": 4810,
+    "number": "113 М = 2428/1тс",
+    "owner": "Чвельов Сергій Миколайович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 5065,
+        "factoryNumber": "09024487",
+        "value": 1140
+      }
+    ],
+    "credits": [
+      {
+        "id": 4810,
+        "service": "ELECTRICITY",
+        "counter": "09024487",
+        "credit": -0.06
+      }
+    ]
+  },
+  {
+    "id": 4817,
+    "number": "11 С = 712/5тс",
+    "owner": "Аміхалакiоає Дмитро Георгiйович",
+    "sectorNumber": 5,
+    "counters": [
+      {
+        "id": 5072,
+        "factoryNumber": "09072193",
+        "value": 1045
+      }
+    ],
+    "credits": [
+      {
+        "id": 4817,
+        "service": "ELECTRICITY",
+        "counter": "09072193",
+        "credit": 45.72
+      },
+      {
+        "id": 4817,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 4817,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 323.0
+      }
+    ]
+  },
+  {
+    "id": 4874,
+    "number": "1114/1 = 2637/4тс",
+    "owner": "Воронюк Валерій Васильович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 5131,
+        "factoryNumber": "10015146",
+        "value": 1726
+      }
+    ],
+    "credits": [
+      {
+        "id": 4874,
+        "service": "ELECTRICITY",
+        "counter": "10015146",
+        "credit": -0.46
+      }
+    ]
+  },
+  {
+    "id": 4916,
+    "number": "118 С = 3591/3тс",
+    "owner": "Кіфяк Тамара Миколаївна",
+    "sectorNumber": 3,
+    "counters": [
+      {
+        "id": 5176,
+        "factoryNumber": "09093246",
+        "value": 2642
+      }
+    ],
+    "credits": [
+      {
+        "id": 4916,
+        "service": "ELECTRICITY",
+        "counter": "09093246",
+        "credit": 11.26
+      },
+      {
+        "id": 4916,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 4916,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 985.0
+      }
+    ]
+  },
+  {
+    "id": 4920,
+    "number": "111 = 2126/2тс БПП",
+    "owner": "Подорожна Оксана Василівна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 5180,
+        "factoryNumber": "201301007490",
+        "value": 228
+      }
+    ],
+    "credits": [
+      {
+        "id": 4920,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 345.0
+      },
+      {
+        "id": 4920,
+        "service": "ELECTRICITY",
+        "counter": "201301007490",
+        "credit": 7.77
+      },
+      {
+        "id": 4920,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      }
+    ]
+  },
+  {
+    "id": 4943,
+    "number": "1136 = 3541/3тс",
+    "owner": "Куров Володимир Володимирович",
+    "sectorNumber": 3,
+    "counters": [
+      {
+        "id": 5205,
+        "factoryNumber": "16019915",
+        "value": 258
+      }
+    ],
+    "credits": [
+      {
+        "id": 4943,
+        "service": "ELECTRICITY",
+        "counter": "16019915",
+        "credit": -0.39
+      },
+      {
+        "id": 4943,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 4943,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 1997.0
+      }
+    ]
+  },
+  {
+    "id": 4972,
+    "number": "11 Р = 1433/2тс",
+    "owner": "Якимчук Олег Вікторович",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 5235,
+        "factoryNumber": "201501004826",
+        "value": 637
+      }
+    ],
+    "credits": [
+      {
+        "id": 4972,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 4972,
+        "service": "ELECTRICITY",
+        "counter": "201501004826",
+        "credit": 176.94
+      },
+      {
+        "id": 4972,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 689.0
+      }
+    ]
+  },
+  {
+    "id": 5018,
+    "number": "1114/2 = 2691/4тс",
+    "owner": "Чорней Юлія Антонівна",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 5285,
+        "factoryNumber": "3236343",
+        "value": 1094
+      }
+    ],
+    "credits": [
+      {
+        "id": 5018,
+        "service": "ELECTRICITY",
+        "counter": "3236343",
+        "credit": -0.04
+      }
+    ]
+  },
+  {
+    "id": 5071,
+    "number": "110 М = 2630/1тс",
+    "owner": "Волоснік Оксана Григорівна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 5342,
+        "factoryNumber": "09022197",
+        "value": 1777
+      }
+    ],
+    "credits": [
+      {
+        "id": 5071,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 5071,
+        "service": "ELECTRICITY",
+        "counter": "09022197",
+        "credit": -0.16
+      },
+      {
+        "id": 5071,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 650.0
+      }
+    ]
+  },
+  {
+    "id": 5072,
+    "number": "112 \"З\" С = 2621/1тс",
+    "owner": "Гаманюк Світлана Іванівна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 5343,
+        "factoryNumber": "1326948",
+        "value": 3570
+      }
+    ],
+    "credits": [
+      {
+        "id": 5072,
+        "service": "ELECTRICITY",
+        "counter": "1326948",
+        "credit": 25.54
+      },
+      {
+        "id": 5072,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 5072,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "id": 5166,
+    "number": "11 С = 2871/4тс",
+    "owner": "Прокопів Ярослава Володимирівна",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 5442,
+        "factoryNumber": "1328642",
+        "value": 7806
+      }
+    ],
+    "credits": [
+      {
+        "id": 5166,
+        "service": "ELECTRICITY",
+        "counter": "1328642",
+        "credit": 145.75
+      },
+      {
+        "id": 5166,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 5166,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 1013.0
+      }
+    ]
+  },
+  {
+    "id": 5209,
+    "number": "111 В = 2894/1тс",
+    "owner": "Білоус Наталія Зибіївна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 5485,
+        "factoryNumber": "09003582",
+        "value": 3622
+      }
+    ],
+    "credits": [
+      {
+        "id": 5209,
+        "service": "ELECTRICITY",
+        "counter": "09003582",
+        "credit": 69.66
+      },
+      {
+        "id": 5209,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 5209,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 546.0
+      }
+    ]
+  },
+  {
+    "id": 5210,
+    "number": "115 = 2923/1тс",
+    "owner": "Радул Оксана Миколаївна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 5486,
+        "factoryNumber": "201301012415",
+        "value": 62
+      }
+    ],
+    "credits": [
+      {
+        "id": 5210,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 5210,
+        "service": "ELECTRICITY",
+        "counter": "201301012415",
+        "credit": 2.69
+      },
+      {
+        "id": 5210,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 275.0
+      }
+    ]
+  },
+  {
+    "id": 5213,
+    "number": "116 \"З\" С = 2887/1тс",
+    "owner": "Черней Анатолiй Iллiч",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 5489,
+        "factoryNumber": "09194285",
+        "value": 5181
+      }
+    ],
+    "credits": [
+      {
+        "id": 5213,
+        "service": "ELECTRICITY",
+        "counter": "09194285",
+        "credit": 469.07
+      },
+      {
+        "id": 5213,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 5213,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 900.0
+      }
+    ]
+  },
+  {
+    "id": 5295,
+    "number": "1187 = 2929/1тс",
+    "owner": "Корнецька Любов Миколаївна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 5576,
+        "factoryNumber": "201501001052",
+        "value": 44
+      }
+    ],
+    "credits": [
+      {
+        "id": 5295,
+        "service": "ELECTRICITY",
+        "counter": "201501001052",
+        "credit": 2.88
+      },
+      {
+        "id": 5295,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 5295,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 275.0
+      }
+    ]
+  },
+  {
+    "id": 5330,
+    "number": "112 АР = 1274/6тс",
+    "owner": "Галілей Валерій Васильович",
+    "sectorNumber": 6,
+    "counters": [
+      {
+        "id": 5611,
+        "factoryNumber": "201701001216",
+        "value": 403
+      }
+    ],
+    "credits": [
+      {
+        "id": 5330,
+        "service": "ELECTRICITY",
+        "counter": "201701001216",
+        "credit": 177.48
+      },
+      {
+        "id": 5330,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 248.0
+      }
+    ]
+  },
+  {
+    "id": 5369,
+    "number": "119 В Р = 3037/1тс",
+    "owner": "Дружиніна Вікторія Володимирівна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 5654,
+        "factoryNumber": "10109141",
+        "value": 7275
+      }
+    ],
+    "credits": [
+      {
+        "id": 5369,
+        "service": "ELECTRICITY",
+        "counter": "10109141",
+        "credit": -0.81
+      },
+      {
+        "id": 5369,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      }
+    ]
+  },
+  {
+    "id": 5370,
+    "number": "11 = 3038/1тс",
+    "owner": "Радиш Орися Миколаївна",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 5655,
+        "factoryNumber": "09007323",
+        "value": 141118
+      }
+    ],
+    "credits": [
+      {
+        "id": 5370,
+        "service": "ELECTRICITY",
+        "counter": "09007323",
+        "credit": 1240.58
+      },
+      {
+        "id": 5370,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 5370,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 3181.0
+      }
+    ]
+  },
+  {
+    "id": 5372,
+    "number": "11 М = 3048/1тс",
+    "owner": "Шумко Іван Дмитрович",
+    "sectorNumber": 1,
+    "counters": [
+      {
+        "id": 5657,
+        "factoryNumber": "09022469",
+        "value": 18391
+      }
+    ],
+    "credits": [
+      {
+        "id": 5372,
+        "service": "ELECTRICITY",
+        "counter": "09022469",
+        "credit": -0.13
+      },
+      {
+        "id": 5372,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 5372,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 1278.0
+      }
+    ]
+  },
+  {
+    "id": 5398,
+    "number": "118 = 2605/2тс",
+    "owner": "Павлов Сергій Іванович",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 5683,
+        "factoryNumber": "09093558",
+        "value": 3334
+      }
+    ],
+    "credits": [
+      {
+        "id": 5398,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 491.0
+      },
+      {
+        "id": 5398,
+        "service": "ELECTRICITY",
+        "counter": "09093558",
+        "credit": 147.84
+      },
+      {
+        "id": 5398,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      }
+    ]
+  },
+  {
+    "id": 5444,
+    "number": "113 = 3284/4тс БПП",
+    "owner": "Данильчук Ігор Петрович",
+    "sectorNumber": 4,
+    "counters": [
+      {
+        "id": 5731,
+        "factoryNumber": "1329515",
+        "value": 2333
+      }
+    ],
+    "credits": [
+      {
+        "id": 5444,
+        "service": "ELECTRICITY",
+        "counter": "1329515",
+        "credit": -0.37
+      }
+    ]
+  },
+  {
+    "id": 5477,
+    "number": "118 С = 786/5тс",
+    "owner": "Дем`янчук Олександр Олегович",
+    "sectorNumber": 5,
+    "counters": [
+      {
+        "id": 5764,
+        "factoryNumber": "0253789",
+        "value": 9688
+      }
+    ],
+    "credits": [
+      {
+        "id": 5477,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 5477,
+        "service": "ELECTRICITY",
+        "counter": "0253789",
+        "credit": 14.34
+      },
+      {
+        "id": 5477,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 961.0
+      }
+    ]
+  },
+  {
+    "id": 5480,
+    "number": "110 С = 4498/3тс БПП",
+    "owner": "Онеску Валентина Іванівна",
+    "sectorNumber": 3,
+    "counters": [
+      {
+        "id": 5767,
+        "factoryNumber": "09132993",
+        "value": 784
+      }
+    ],
+    "credits": [
+      {
+        "id": 5480,
+        "service": "ELECTRICITY",
+        "counter": "09132993",
+        "credit": -0.54
+      }
+    ]
+  },
+  {
+    "id": 5485,
+    "number": "112 Р = 2712/2тс",
+    "owner": "Сопко Зоя Якимівна",
+    "sectorNumber": 2,
+    "counters": [
+      {
+        "id": 5772,
+        "factoryNumber": "11144976",
+        "value": 89
+      }
+    ],
+    "credits": [
+      {
+        "id": 5485,
+        "service": "ELECTRICITY",
+        "counter": "11144976",
+        "credit": 14.19
+      },
+      {
+        "id": 5485,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 5485,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 689.0
+      }
+    ]
+  },
+  {
+    "id": 5492,
+    "number": "113 = 686/5тс",
+    "owner": "Басараб Василь Несторович",
+    "sectorNumber": 5,
+    "counters": [
+      {
+        "id": 5779,
+        "factoryNumber": "201702029786",
+        "value": 75
+      }
+    ],
+    "credits": [
+      {
+        "id": 5492,
+        "service": "ELECTRICITY",
+        "counter": "201702029786",
+        "credit": 75.59
+      },
+      {
+        "id": 5492,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 5492,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 1251.0
+      }
+    ]
+  },
+  {
+    "id": 5766,
+    "number": "117 = 4518/3тс БПП",
+    "owner": "Михайлюк Любов Василівна",
+    "sectorNumber": 3,
+    "counters": [
+      {
+        "id": 6064,
+        "factoryNumber": "201301018607",
+        "value": 28
+      }
+    ],
+    "credits": [
+      {
+        "id": 5766,
+        "service": "ELECTRICITY",
+        "counter": "201301018607",
+        "credit": -0.78
+      },
+      {
+        "id": 5766,
+        "service": "VIDEO",
+        "counter": "",
+        "credit": 48.0
+      },
+      {
+        "id": 5766,
+        "service": "SERVICE",
+        "counter": "",
+        "credit": 252.0
+      }
+    ]
+  }
+]
