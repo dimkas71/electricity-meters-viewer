@@ -23,16 +23,22 @@ public class ContractInfo {
 
     @JsonProperty("id")
     private Integer id;
+
     @JsonProperty("number")
     private String number;
+
     @JsonProperty("owner")
     private String owner;
+
     @JsonProperty("sectorNumber")
     private Integer sectorNumber;
+
     @JsonProperty("counters")
     private List<Counter> counters = null;
+
     @JsonProperty("credits")
     private List<Credit> credits = null;
+
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 

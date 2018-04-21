@@ -21,12 +21,16 @@ public class Credit {
 
     @JsonProperty("id")
     private Integer id;
+
     @JsonProperty("service")
     private String service;
+
     @JsonProperty("counter")
     private String counter;
+
     @JsonProperty("credit")
     private Double credit;
+
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 

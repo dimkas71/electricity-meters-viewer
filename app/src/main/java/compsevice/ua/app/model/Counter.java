@@ -19,10 +19,13 @@ public class Counter {
 
     @JsonProperty("id")
     private Integer id;
+
     @JsonProperty("factoryNumber")
     private String factoryNumber;
+
     @JsonProperty("value")
     private Integer value;
+
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
