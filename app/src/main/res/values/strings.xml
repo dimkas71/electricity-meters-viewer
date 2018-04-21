@@ -4,4 +4,6 @@
     <string name="menu_title_settings">Settings</string>
     <string name="menu_title_search">Search</string>
     <string name="searchable_hint">Type contract number here...</string>
+    <string name="text_sector_number">Sect: %d</string>
+    <string name="text_contract_number">Contract №: %s</string>
 </resources>
