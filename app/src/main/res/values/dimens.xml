@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="text_contract_number_size">16sp</dimen>
+    <dimen name="text_contract_number_size">14sp</dimen>
+    <dimen name="text_owner_size">16sp</dimen>
+    <dimen name="text_sector_size">12sp</dimen>
+    <dimen name="text_counters_size">14sp</dimen>
+    <dimen name="text_credit_size">20sp</dimen>
 
 </resources>

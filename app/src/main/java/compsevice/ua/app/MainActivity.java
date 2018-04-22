@@ -3,6 +3,8 @@ package compsevice.ua.app;
 import android.app.SearchManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
@@ -45,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
         contractInfoAdapter = new ContractInfoAdapter(getApplicationContext(), fromJson());
 
         recylcerView.setAdapter(contractInfoAdapter);
+
+        DividerItemDecoration itemDecoration = new DividerItemDecoration(recylcerView.getContext(), layoutManager.getOrientation());
+
+        recylcerView.addItemDecoration(itemDecoration);
+
 
 
     }

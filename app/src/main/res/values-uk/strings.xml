@@ -7,4 +7,6 @@
     <string name="searchable_hint">Набрати номер договору для пошуку...</string>
     <string name="text_sector_number">Сект: %d</string>
     <string name="text_contract_number">Угода №: %s</string>
+    <string name="text_counters_factory_number">S/N:</string>
+    <string name="text_counters_value">Показ:</string>
 </resources>

@@ -21,6 +21,11 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 })
 public class ContractInfo {
 
+    public static final String ELECTRICITY = "ELECTRICITY";
+    public static final String VIDEO = "VIDEO";
+    public static final String SERVICE = "SERVICE";
+
+
     @JsonProperty("id")
     private Integer id;
 
@@ -110,6 +115,19 @@ public class ContractInfo {
     @JsonAnySetter
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
+    }
+
+    public double creditByService(String service) {
+
+        double sum = 0.0;
+
+        for (Credit c : getCredits()) {
+            if (service.equalsIgnoreCase(c.getService())) {
+                sum += c.getCredit();
+            }
+        }
+
+        return  sum;
     }
 
 }

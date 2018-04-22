@@ -6,4 +6,6 @@
     <string name="searchable_hint">Type contract number here...</string>
     <string name="text_sector_number">Sect: %d</string>
     <string name="text_contract_number">Contract №: %s</string>
+    <string name="text_counters_factory_number">S/N:</string>
+    <string name="text_counters_value">Val:</string>
 </resources>
