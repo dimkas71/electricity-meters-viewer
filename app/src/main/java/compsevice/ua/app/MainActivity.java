@@ -27,6 +27,7 @@ import compsevice.ua.app.model.ContractInfo;
 
 public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
 
+
     private RecyclerView recylcerView;
     private ProgressBar progressBar;
     private ContractInfoAdapter contractInfoAdapter;
