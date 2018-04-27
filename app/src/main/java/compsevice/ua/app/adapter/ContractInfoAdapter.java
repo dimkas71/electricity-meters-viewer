@@ -3,19 +3,23 @@ package compsevice.ua.app.adapter;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.TextView;
 
+import java.lang.ref.WeakReference;
+import java.util.ArrayList;
 import java.util.List;
 
 import compsevice.ua.app.R;
 import compsevice.ua.app.model.ContractInfo;
 import compsevice.ua.app.model.Counter;
 
-public class ContractInfoAdapter extends RecyclerView.Adapter<ContractInfoAdapter.ViewHolder> {
+public class ContractInfoAdapter extends RecyclerView.Adapter<ContractInfoAdapter.ViewHolder> implements Filterable {
 
 
     private List<ContractInfo> contracts;
@@ -91,13 +95,21 @@ public class ContractInfoAdapter extends RecyclerView.Adapter<ContractInfoAdapte
         holder.tvCreditService.setText(String.format("%.2f", creditService));
 
 
-
-
     }
 
     @Override
     public int getItemCount() {
         return contracts.size();
+    }
+
+    @Override
+    public Filter getFilter() {
+        return new ContractInfoFilter(this, this.contracts);
+    }
+
+    public void update(List<ContractInfo> updated) {
+        this.contracts = updated;
+        notifyDataSetChanged();
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
@@ -121,6 +133,61 @@ public class ContractInfoAdapter extends RecyclerView.Adapter<ContractInfoAdapte
             tvCreditService = parent.findViewById(R.id.text_credit_serivice);
         }
     }
+
+    static class ContractInfoFilter extends Filter {
+
+        private static final String TAG = ContractInfoFilter.class.getSimpleName();
+
+        List<ContractInfo> originalInfos = new ArrayList<>();
+
+        WeakReference<ContractInfoAdapter> adapter;
+
+        ContractInfoFilter(ContractInfoAdapter adapter, List<ContractInfo> newInfos) {
+            this.originalInfos = newInfos;
+            this.adapter = new WeakReference<>(adapter);
+
+        }
+
+
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+            Log.i(TAG, "Filtering on a constraint " + constraint);
+            FilterResults results = new FilterResults();
+
+            if (constraint == null) {
+                results.values = new ArrayList<>(this.originalInfos);
+                results.count = this.originalInfos.size();
+            } else {
+
+                List<ContractInfo> filteredInfos = new ArrayList<>();
+
+                for (ContractInfo ci : originalInfos) {
+                    if (ci.matchesQuery(constraint)) {
+                        filteredInfos.add(ci);
+                    }
+                }
+
+                results.values = new ArrayList<>(filteredInfos);
+                results.count = filteredInfos.size();
+
+            }
+
+            return results;
+        }
+
+        @Override
+        protected void publishResults(CharSequence constraint, FilterResults results) {
+            Log.i(TAG, "Publishing results on the Main thread. All count is: " + results.count);
+            adapter.get().update((List<ContractInfo>) results.values);
+        }
+
+
+        public void update(List<ContractInfo> newInfos) {
+            this.originalInfos = new ArrayList<>(newInfos);
+        }
+
+    }
+
 
 
 }
