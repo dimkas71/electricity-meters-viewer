@@ -130,4 +130,25 @@ public class ContractInfo {
         return  sum;
     }
 
+    public boolean matchesQuery(CharSequence query) {
+
+        boolean result = false;
+
+        if (number.contains(query)) {
+            result = true;
+        } else if (owner.contains(query)) {
+            result = true;
+        } else {
+            for (Counter c : getCounters()) {
+                if (c.getFactoryNumber().contains(query)) {
+                    result = true;
+                    break;
+                }
+            }
+        }
+
+        return result;
+    }
+
+
 }
