@@ -1,5 +1,8 @@
 package compsevice.ua.app.model;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -151,4 +154,16 @@ public class ContractInfo {
     }
 
 
+    @Override
+    public String toString() {
+        return "ContractInfo{" +
+                "id=" + id +
+                ", number='" + number + '\'' +
+                ", owner='" + owner + '\'' +
+                ", sectorNumber=" + sectorNumber +
+                ", counters=" + counters +
+                ", credits=" + credits +
+                ", additionalProperties=" + additionalProperties +
+                '}';
+    }
 }

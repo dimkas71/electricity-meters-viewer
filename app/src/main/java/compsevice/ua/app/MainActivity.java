@@ -1,6 +1,7 @@
 package compsevice.ua.app;
 
 import android.app.SearchManager;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -25,14 +26,19 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import compsevice.ua.app.activity.ContractInfoDetailActivity;
 import compsevice.ua.app.adapter.ContractInfoAdapter;
 import compsevice.ua.app.model.ContractInfo;
 import compsevice.ua.app.rest.ApiUtils;
 import compsevice.ua.app.rest.ContractInfoService;
 import retrofit2.Response;
 
-public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
+public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener, ContractInfoAdapter.RecyclerTouchListener.ClickListener {
 
+
+    private static final String TAG = MainActivity.class.getSimpleName();
+
+    private String lastQuery = "NO_SUCH_ELEMENT";
 
     private RecyclerView recylcerView;
     private ProgressBar progressBar;
@@ -61,6 +67,10 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         recylcerView.addItemDecoration(itemDecoration);
 
         filter = contractInfoAdapter.getFilter();
+
+        recylcerView.addOnItemTouchListener(new ContractInfoAdapter.RecyclerTouchListener(getApplicationContext(), recylcerView, this));
+
+        recylcerView.setHasFixedSize(true);
 
 
     }
@@ -129,11 +139,20 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         Log.i("SearchView", "Query:" + query);
 
         if (!query.isEmpty()) {
-            AsyncTask<String, Void, List<ContractInfo>> asyncTask = new Downloader(this, progressBar);
-            asyncTask.execute(query);
+            query(query);
         }
 
         return false;
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    private void query(String query) {
+        AsyncTask<String, Void, List<ContractInfo>> asyncTask = new Downloader(this, progressBar);
+        asyncTask.execute(query);
     }
 
     @Override
@@ -150,6 +169,21 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     public Filter getFilter() {
         return filter;
     }
+
+    @Override
+    public void onClick(View v, int position) {
+        ContractInfo info = contractInfoAdapter.getDataAt(position);
+        Log.i(TAG, "Data for the position" + info);
+
+        Intent intent = new Intent(getApplicationContext(), ContractInfoDetailActivity.class);
+
+        startActivity(intent);
+
+    }
+
+    @Override
+    public void onLongClick(View v, int position) {}
+
 
 
     private static class Downloader extends AsyncTask<String, Void, List<ContractInfo>> {
