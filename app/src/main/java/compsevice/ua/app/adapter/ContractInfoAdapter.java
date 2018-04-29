@@ -134,7 +134,7 @@ public class ContractInfoAdapter extends RecyclerView.Adapter<ContractInfoAdapte
         }
     }
 
-    static class ContractInfoFilter extends Filter {
+    public static class ContractInfoFilter extends Filter {
 
         private static final String TAG = ContractInfoFilter.class.getSimpleName();
 

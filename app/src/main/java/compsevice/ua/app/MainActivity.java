@@ -1,6 +1,7 @@
 package compsevice.ua.app;
 
 import android.app.SearchManager;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
@@ -10,6 +11,7 @@ import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Filter;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -18,12 +20,16 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import compsevice.ua.app.adapter.ContractInfoAdapter;
 import compsevice.ua.app.model.ContractInfo;
+import compsevice.ua.app.rest.ApiUtils;
+import compsevice.ua.app.rest.ContractInfoService;
+import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
 
@@ -38,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-         //1. ProgressBar
+        //1. ProgressBar
         progressBar = findViewById(R.id.progress_bar);
         recylcerView = findViewById(R.id.recycler_view);
 
@@ -46,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
         recylcerView.setLayoutManager(layoutManager);
 
-        contractInfoAdapter = new ContractInfoAdapter(getApplicationContext(), fromJson());
+        contractInfoAdapter = new ContractInfoAdapter(getApplicationContext(), new ArrayList<ContractInfo>());
 
         recylcerView.setAdapter(contractInfoAdapter);
 
@@ -58,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
 
 
     }
+
 
     private List<ContractInfo> fromJson() {
 
@@ -120,6 +127,12 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     @Override
     public boolean onQueryTextSubmit(String query) {
         Log.i("SearchView", "Query:" + query);
+
+        if (!query.isEmpty()) {
+            AsyncTask<String, Void, List<ContractInfo>> asyncTask = new Downloader(this, progressBar);
+            asyncTask.execute(query);
+        }
+
         return false;
     }
 
@@ -129,4 +142,64 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         filter.filter(newText);
         return false;
     }
+
+    public ContractInfoAdapter getContractInfoAdapter() {
+        return contractInfoAdapter;
+    }
+
+    public Filter getFilter() {
+        return filter;
+    }
+
+
+    private static class Downloader extends AsyncTask<String, Void, List<ContractInfo>> {
+
+        private WeakReference<ProgressBar> progressBar;
+        private WeakReference<MainActivity> activity;
+
+        public Downloader(MainActivity activity, ProgressBar progressBar) {
+            this.progressBar = new WeakReference<ProgressBar>(progressBar);
+            this.activity = new WeakReference<MainActivity>(activity);
+        }
+
+        @Override
+        protected List<ContractInfo> doInBackground(String... queries) {
+
+            ContractInfoService service = ApiUtils.service();
+
+            List<ContractInfo> cis = new ArrayList<>();
+            try {
+                Response<List<ContractInfo>> response = service.contractInfos(queries[0]).execute();
+                cis = response.body();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+
+            return cis;
+        }
+
+        @Override
+        protected void onPreExecute() {
+            progressBar.get().setVisibility(View.VISIBLE);
+            super.onPreExecute();
+        }
+
+        @Override
+        protected void onPostExecute(List<ContractInfo> cis) {
+            progressBar.get().setVisibility(View.GONE);
+
+            ContractInfoAdapter adapter = activity.get().getContractInfoAdapter();
+            adapter.update(cis);
+
+            ContractInfoAdapter.ContractInfoFilter filter = (ContractInfoAdapter.ContractInfoFilter) activity.get().getFilter();
+
+            filter.update(cis);
+
+        }
+
+    }
+
+
+
 }
