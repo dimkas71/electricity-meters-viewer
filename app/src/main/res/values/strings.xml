@@ -8,4 +8,7 @@
     <string name="text_contract_number">Contract №: %s</string>
     <string name="text_counters_factory_number">S/N:</string>
     <string name="text_counters_value">Val:</string>
+    <string name="text_pick_a_date">Choose a date</string>
+    <string name="text_date_from">From:&lt;b>%1$s&lt;/b></string>
+    <string name="text_date_to">To:&lt;b>%1$s&lt;/b></string>
 </resources>

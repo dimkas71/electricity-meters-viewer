@@ -5,5 +5,6 @@
     <dimen name="text_sector_size">12sp</dimen>
     <dimen name="text_counters_size">14sp</dimen>
     <dimen name="text_credit_size">20sp</dimen>
+    <dimen name="button_circle_size">30dp</dimen>
 
 </resources>

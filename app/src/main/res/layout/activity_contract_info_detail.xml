@@ -5,10 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.ContractInfoDetailActivity">
-    <TextView
+
+    <Button
+        android:id="@+id/button_date_picker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Detail Activity"
-        />
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/text_pick_a_date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <fragment
+        android:id="@+id/fragment_date_picker"
+        android:name="compsevice.ua.app.fragment.PeriodDateFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:tag="periodDatePicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>

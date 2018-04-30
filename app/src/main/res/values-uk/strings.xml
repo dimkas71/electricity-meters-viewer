@@ -9,4 +9,7 @@
     <string name="text_contract_number">Угода №: %s</string>
     <string name="text_counters_factory_number">S/N:</string>
     <string name="text_counters_value">Показ:</string>
+    <string name="text_pick_a_date">Виберіть дату</string>
+    <string name="text_date_from">З:&lt;b>%1$s&lt;/b></string>
+    <string name="text_date_to">По:&lt;b>%1$s&lt;/b></string>
 </resources>
