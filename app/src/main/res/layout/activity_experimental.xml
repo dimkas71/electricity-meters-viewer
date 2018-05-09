@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorGray"
+    tools:context=".activity.ExperimentalActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_from">
+
+        <TextView
+            android:id="@+id/text_view_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="To 31.05.2018"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_to_from" />
+
+        <ImageView
+            android:id="@+id/image_view_to"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/ic_keyboard_arrow_right_white_24dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Period 01.05.2018 - 31.05.2018"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_view_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_up_down"
+        android:layout_width="@dimen/text_view_up_down"
+        android:layout_height="@dimen/text_view_up_down"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_keyboard_arrow_down_green_24dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_to" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_header">
+
+        <TextView
+            android:id="@+id/text_view_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="From  01.05.2018"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_to_from" />
+
+        <ImageView
+            android:id="@+id/image_view_from"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="@color/colorPrimaryDark"
+            android:clickable="true"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/ic_keyboard_arrow_right_white_24dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
