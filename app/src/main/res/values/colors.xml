@@ -8,4 +8,5 @@
     <color name="colorCounters">#00796B</color>
     <color name="colorCredit">#00796B</color>
     <color name="colorCreditRed">#FF4081</color>
+    <color name="colorGray">#e2dfe9</color>
 </resources>

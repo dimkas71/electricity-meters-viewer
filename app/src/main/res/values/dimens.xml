@@ -8,5 +8,7 @@
     <dimen name="button_circle_size">30dp</dimen>
     <dimen name="textViewPeriodFrom">24sp</dimen>
     <dimen name="textViewPeriod">24sp</dimen>
-
+    <dimen name="text_view_header">20sp</dimen>
+    <dimen name="text_to_from">16sp</dimen>
+    <dimen name="text_view_up_down">36dp</dimen>
 </resources>

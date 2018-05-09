@@ -27,11 +27,13 @@ import java.util.Arrays;
 import java.util.List;
 
 import compsevice.ua.app.activity.ContractInfoDetailActivity;
+import compsevice.ua.app.activity.ExperimentalActivity;
 import compsevice.ua.app.adapter.ContractInfoAdapter;
 import compsevice.ua.app.model.ContractInfo;
 import compsevice.ua.app.rest.ApiUtils;
 import compsevice.ua.app.rest.ContractInfoService;
 import retrofit2.Response;
+
 
 public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener, ContractInfoAdapter.RecyclerTouchListener.ClickListener {
 
@@ -127,6 +129,10 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         switch (item.getItemId()) {
             case R.id.action_settings:
                 Toast.makeText(this, "Settings has been selected here..", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.action_run:
+                Intent intent = new Intent(getApplicationContext(), ExperimentalActivity.class);
+                startActivity(intent);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
