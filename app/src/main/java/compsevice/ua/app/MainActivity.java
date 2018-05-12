@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
                 Toast.makeText(this, "Settings has been selected here..", Toast.LENGTH_LONG).show();
                 return true;
             case R.id.action_run:
-                Intent intent = new Intent(getApplicationContext(), ExperimentalActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ContractInfoDetailActivity.class);
                 startActivity(intent);
                 return true;
             default:

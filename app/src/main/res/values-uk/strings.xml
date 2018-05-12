@@ -13,4 +13,5 @@
     <string name="text_date_from">З:&lt;b>%1$s&lt;/b></string>
     <string name="text_date_to">По:&lt;b>%1$s&lt;/b></string>
     <string name="text_date_period">Період %1$s - %2$s</string>
+    <string name="contact_info_detail_activity">Детально про договір</string>
 </resources>
