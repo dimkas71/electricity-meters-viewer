@@ -29,7 +29,6 @@
             android:name=".activity.ContractInfoDetailActivity"
             android:parentActivityName=".MainActivity"
             android:label="@string/contact_info_detail_activity"/>
-        <activity android:name=".activity.ExperimentalActivity" android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>
