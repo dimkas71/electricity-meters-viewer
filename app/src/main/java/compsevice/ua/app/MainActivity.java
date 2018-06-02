@@ -27,11 +27,9 @@ import java.util.Arrays;
 import java.util.List;
 
 import compsevice.ua.app.activity.ContractInfoDetailActivity;
-import compsevice.ua.app.activity.ExperimentalActivity;
 import compsevice.ua.app.adapter.ContractInfoAdapter;
 import compsevice.ua.app.model.ContractInfo;
-import compsevice.ua.app.rest.ApiUtils;
-import compsevice.ua.app.rest.ContractInfoService;
+import compsevice.ua.app.rest.RestApi;
 import retrofit2.Response;
 
 
@@ -205,11 +203,11 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         @Override
         protected List<ContractInfo> doInBackground(String... queries) {
 
-            ContractInfoService service = ApiUtils.service();
+            RestApi service = RestApi.Companion.service(RestApi.Companion.getBASE_URL());
 
             List<ContractInfo> cis = new ArrayList<>();
             try {
-                Response<List<ContractInfo>> response = service.contractInfos(queries[0]).execute();
+                Response<List<ContractInfo>> response = service.contracts(queries[0]).execute();
                 cis = response.body();
             } catch (IOException e) {
                 e.printStackTrace();
