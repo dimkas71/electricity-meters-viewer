@@ -20,6 +20,7 @@ import java.util.List;
 import compsevice.ua.app.R;
 import compsevice.ua.app.model.ContractInfo;
 import compsevice.ua.app.model.Counter;
+import compsevice.ua.app.model.ServiceType;
 
 public class ContractInfoAdapter extends RecyclerView.Adapter<ContractInfoAdapter.ViewHolder> implements Filterable {
 
@@ -67,7 +68,7 @@ public class ContractInfoAdapter extends RecyclerView.Adapter<ContractInfoAdapte
 
         holder.tvCounters.setText(sb.toString());
 
-        double creditElectricity = contractInfo.creditByService(ContractInfo.ELECTRICITY);
+        double creditElectricity = contractInfo.creditByService(ServiceType.Electricity);
 
         holder.tvCreditElectricity.setTextColor(context.getResources().getColor(R.color.colorCredit));
 
@@ -78,7 +79,7 @@ public class ContractInfoAdapter extends RecyclerView.Adapter<ContractInfoAdapte
 
         holder.tvCreditElectricity.setText(String.format("%.2f", creditElectricity));
 
-        double creditVideo = contractInfo.creditByService(ContractInfo.VIDEO);
+        double creditVideo = contractInfo.creditByService(ServiceType.Video);
         holder.tvCreditVideo.setTextColor(context.getResources().getColor(R.color.colorCredit));
 
         if (creditVideo > 0.0d) {
@@ -87,7 +88,7 @@ public class ContractInfoAdapter extends RecyclerView.Adapter<ContractInfoAdapte
 
         holder.tvCreditVideo.setText(String.format("%.2f", creditVideo));
 
-        double creditService = contractInfo.creditByService(ContractInfo.SERVICE);
+        double creditService = contractInfo.creditByService(ServiceType.Service);
         holder.tvCreditService.setTextColor(context.getResources().getColor(R.color.colorCredit));
 
         if (creditService > 0.0d) {
