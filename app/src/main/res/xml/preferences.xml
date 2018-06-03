@@ -3,9 +3,13 @@
     <ListPreference
         android:key="pref_search_variant"
         android:title="@string/pref_search_variant"
+        android:summary="@string/pref_search_variant_summary"
         android:dialogTitle="@string/pref_search_variant"
-        android:entries="@array/search_variant"
-        android:defaultValue="fdf"/>
+        android:entries="@array/search_variant_titles"
+        android:entryValues="@array/search_variant_values"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:defaultValue="1"/>
 
 
     <PreferenceCategory

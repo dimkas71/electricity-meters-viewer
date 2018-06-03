@@ -21,11 +21,17 @@
     <string name="pref_password_title">Пароль</string>
     <string name="pref_password_summary">Пароль</string>
     <string name="pref_connection_title">Параметри з\'єднання</string>
-    <string name="pref_search_variant">Search variant</string>
+    <string name="pref_search_variant">Варіант пошуку</string>
+    <string name="pref_search_variant_summary">Пошук: %1$s</string>
 
-    <string-array name="search_variant">
-        <item>По номеру договору</item>
-        <item>По номеру лічильника</item>
+    <string-array name="search_variant_titles">
+        <item name="1">По номеру договора</item>
+        <item name="2">По номеру лічильника</item>
+    </string-array>
+
+    <string-array name="search_variant_values">
+        <item name="1">1</item>
+        <item name="2">2</item>
     </string-array>
 
 </resources>
