@@ -15,7 +15,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Filter;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -27,6 +26,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import compsevice.ua.app.activity.ContractInfoDetailActivity;
+import compsevice.ua.app.activity.SettingsActivity;
 import compsevice.ua.app.adapter.ContractInfoAdapter;
 import compsevice.ua.app.model.ContractInfo;
 import compsevice.ua.app.rest.RestApi;
@@ -126,7 +126,8 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_settings:
-                Toast.makeText(this, "Settings has been selected here..", Toast.LENGTH_LONG).show();
+                Intent i = new Intent(getApplicationContext(), SettingsActivity.class);
+                startActivity(i);
                 return true;
             case R.id.action_run:
                 Intent intent = new Intent(getApplicationContext(), ContractInfoDetailActivity.class);

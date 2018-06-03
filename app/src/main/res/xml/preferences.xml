@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="pref_search_variant"
+        android:title="@string/pref_search_variant"
+        android:dialogTitle="@string/pref_search_variant"
+        android:entries="@array/search_variant"
+        android:defaultValue="fdf"/>
+
+
+    <PreferenceCategory
+        android:key="pref_connection"
+        android:title="@string/pref_connection_title"
+        android:icon="@android:drawable/ic_menu_view"
+        >
+
+        <EditTextPreference
+            android:key="pref_url"
+            android:title="@string/pref_url_title"
+            android:summary="@string/pref_url_summary"/>
+        <EditTextPreference
+            android:key="pref_user"
+            android:title="@string/pref_user_title"
+            android:summary="@string/pref_user_summary"/>
+
+        <EditTextPreference
+            android:key="pref_password"
+            android:title="@string/pref_password_title"
+            android:password="true"/>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
