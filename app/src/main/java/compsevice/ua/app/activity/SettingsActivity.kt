@@ -29,9 +29,9 @@ class SettingsActivity : AppCompatActivity() {
             Log.i(SettingsFragment::class.java.simpleName, sp?.getString(key, ""))
 
             when(key) {
-                "pref_url" -> updateSummary("pref_url")
-                "pref_user" -> updateSummary("pref_user")
-                "pref_search_variant" -> updateSummary("pref_search_variant")
+                URL_KEY -> updateSummary(URL_KEY)
+                USER_KEY -> updateSummary(USER_KEY)
+                SEARCH_VARIANT_KEY -> updateSummary(SEARCH_VARIANT_KEY)
                 else -> ""
             }
 
@@ -41,7 +41,7 @@ class SettingsActivity : AppCompatActivity() {
             super.onCreate(savedInstanceState)
             addPreferencesFromResource(R.xml.preferences)
 
-            listOf("pref_user", "pref_url", "pref_search_variant")
+            listOf(URL_KEY, USER_KEY, SEARCH_VARIANT_KEY)
                     .forEach{updateSummary(it)}
 
         }
@@ -58,10 +58,14 @@ class SettingsActivity : AppCompatActivity() {
 
         companion object {
 
+            const val URL_KEY = "pref_url"
+            const val USER_KEY = "pref_user"
+            const val SEARCH_VARIANT_KEY = "pref_search_variant"
+
             val MAP = mapOf(
-                    "pref_url" to R.string.pref_url_summary,
-                    "pref_user" to R.string.pref_user_summary,
-                    "pref_search_variant" to R.string.pref_search_variant_summary)
+                    URL_KEY to R.string.pref_url_summary,
+                    USER_KEY to R.string.pref_user_summary,
+                    SEARCH_VARIANT_KEY to R.string.pref_search_variant_summary)
         }
 
         private fun updateSummary(key: String) {
