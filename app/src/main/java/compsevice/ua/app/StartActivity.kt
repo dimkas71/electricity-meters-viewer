@@ -1,11 +1,9 @@
 package compsevice.ua.app
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v4.view.LayoutInflaterCompat
+import android.support.v7.app.AppCompatActivity
 import android.view.Menu
-import android.view.MenuInflater
 import android.view.MenuItem
 import compsevice.ua.app.activity.SettingsActivity
 
@@ -25,6 +23,11 @@ class StartActivity : AppCompatActivity() {
         return when (item?.itemId) {
             R.id.action_settings -> {
                 startActivity(Intent(this, SettingsActivity::class.java))
+                true
+            }
+            R.id.action_run -> {
+
+
                 true
             }
             else -> super.onOptionsItemSelected(item)
