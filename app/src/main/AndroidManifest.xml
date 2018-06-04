@@ -12,13 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
-            android:launchMode="singleTop">
+            android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.SEARCH" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
             <meta-data
@@ -28,10 +24,16 @@
         <activity
             android:name=".activity.ContractInfoDetailActivity"
             android:label="@string/contact_info_detail_activity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".StartActivity" />
         <activity
             android:name=".activity.SettingsActivity"
-            android:parentActivityName=".MainActivity" />
-     </application>
+            android:parentActivityName=".StartActivity" />
+        <activity android:name=".StartActivity" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
 
 </manifest>
