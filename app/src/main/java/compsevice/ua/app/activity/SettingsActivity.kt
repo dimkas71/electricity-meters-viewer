@@ -29,9 +29,9 @@ class SettingsActivity : AppCompatActivity() {
             Log.i(SettingsFragment::class.java.simpleName, sp?.getString(key, ""))
 
             when(key) {
-                URL_KEY -> updateSummary(URL_KEY, R.string.pref_url_summary)
-                USER_KEY -> updateSummary(USER_KEY, R.string.pref_user_summary)
-                SEARCH_VARIANT_KEY -> updateSummary(SEARCH_VARIANT_KEY, R.string.pref_search_variant_summary)
+                URL_KEY -> updateSummary(URL_KEY)
+                USER_KEY -> updateSummary(USER_KEY)
+                SEARCH_VARIANT_KEY -> updateSummary(SEARCH_VARIANT_KEY)
                 else -> ""
             }
 
@@ -41,9 +41,8 @@ class SettingsActivity : AppCompatActivity() {
             super.onCreate(savedInstanceState)
             addPreferencesFromResource(R.xml.preferences)
 
-            updateSummary(URL_KEY, R.string.pref_url_summary)
-            updateSummary(USER_KEY, R.string.pref_user_summary)
-            updateSummary(SEARCH_VARIANT_KEY, R.string.pref_search_variant_summary)
+            listOf(URL_KEY, USER_KEY, SEARCH_VARIANT_KEY)
+                    .forEach{updateSummary(it)}
 
         }
 
@@ -60,15 +59,19 @@ class SettingsActivity : AppCompatActivity() {
         companion object {
 
             const val URL_KEY = "pref_url"
-            const val URL_SUMMARY_KEY = "pref_url_summary"
             const val USER_KEY = "pref_user"
-            const val USER_SUMMARY_KEY = "pref_user_summary"
             const val SEARCH_VARIANT_KEY = "pref_search_variant"
-            const val SEARCH_VARIANT_SUMMARY_KEY = "pref_search_variant_summary"
 
+            val MAP = mapOf(
+                    URL_KEY to R.string.pref_url_summary,
+                    USER_KEY to R.string.pref_user_summary,
+                    SEARCH_VARIANT_KEY to R.string.pref_search_variant_summary)
         }
 
-        private fun updateSummary(key: String, resId: Int) {
+        private fun updateSummary(key: String) {
+
+            val resId: Int = MAP[key] ?: R.string.pref_password_summary
+
             findPreference(key)?.summary = getString(resId, preferenceScreen.sharedPreferences.getString(key, ""))
         }
 
