@@ -49,7 +49,7 @@ interface RandomService {
 
             val retrofit = Retrofit.Builder()
                     .addConverterFactory(MoshiConverterFactory.create())
-                    .baseUrl(url)
+                    .baseUrl(url) //TODO: default values....
                     .client(client)
                     .build()
             return retrofit.create(RandomService::class.java)

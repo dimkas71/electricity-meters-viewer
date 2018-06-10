@@ -1,21 +1,20 @@
 package compsevice.ua.app
 
 import android.app.Application
-import compsevice.ua.app.di.DaggerNetworkComponent
-import compsevice.ua.app.di.NetworkComponent
-import compsevice.ua.app.di.NetworkModule
+import compsevice.ua.app.di.*
 
 class EMVApplication : Application() {
 
-    lateinit var networkComponent: NetworkComponent
+    lateinit var injector: Injector private set
 
     override fun onCreate() {
         super.onCreate()
-        networkComponent = initDagger(this)
+        injector = initDagger()
     }
 
-    private fun initDagger(emvApplication: EMVApplication): NetworkComponent =
-            DaggerNetworkComponent.builder()
-                    .networkModule(NetworkModule(emvApplication))
+    private fun initDagger(): Injector =
+            DaggerInjector.builder()
+                    .applicationModule(ApplicationModule(this))
+                    .networkModule(NetworkModule(this))
                     .build()
 }
