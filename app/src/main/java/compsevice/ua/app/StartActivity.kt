@@ -39,6 +39,11 @@ class StartActivity : AppCompatActivity() {
             model.random.postValue(RandomNumber(random = Random().nextInt(100).toLong()))
         }
 
+        update.setOnClickListener {
+            model.update(seekBar.progress)
+        }
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

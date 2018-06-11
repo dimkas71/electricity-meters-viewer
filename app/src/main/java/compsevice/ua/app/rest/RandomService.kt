@@ -11,9 +11,10 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Path
+import retrofit2.http.Query
 import java.util.*
 
-data class RandomNumber(val createdAt: Date = Date(), val random: Long)
+data class RandomNumber(val random: Long)
 
 class BasicAuthInterceptor(val user: String, val password: String) : Interceptor {
 
@@ -34,14 +35,14 @@ class BasicAuthInterceptor(val user: String, val password: String) : Interceptor
 interface RandomService {
 
     @GET("test")
-    fun randomNumber(@Path("from") from: Int, @Path("to") to: Int): Call<RandomNumber>
+    fun randomNumber(@Query("from") from: Int, @Query("to") to: Int): Call<RandomNumber>
 
     companion object {
         fun create(context: Context): RandomService {
 
-            val url = PreferenceManager.getDefaultSharedPreferences(context).getString("pref_url", "")
-            val user = PreferenceManager.getDefaultSharedPreferences(context).getString("prer_user", "")
-            val password = PreferenceManager.getDefaultSharedPreferences(context).getString("pref_password","")
+            var url = PreferenceManager.getDefaultSharedPreferences(context).getString("pref_url", "http://194.44.128.140:9090/demo/hs/")
+            var user = PreferenceManager.getDefaultSharedPreferences(context).getString("prer_user", "unload")
+            var password = PreferenceManager.getDefaultSharedPreferences(context).getString("pref_password","mbuh")
 
             val client = OkHttpClient.Builder()
                     .addInterceptor(BasicAuthInterceptor(user, password))
