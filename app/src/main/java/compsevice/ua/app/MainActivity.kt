@@ -130,11 +130,6 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener, Contra
                 startActivity(i)
                 return true
             }
-            R.id.action_run -> {
-                val intent = Intent(applicationContext, ContractInfoDetailActivity::class.java)
-                startActivity(intent)
-                return true
-            }
             else -> return super.onOptionsItemSelected(item)
         }
 
@@ -221,8 +216,6 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener, Contra
     }
 
     companion object {
-
-
         private val TAG = MainActivity::class.java.simpleName
     }
 
