@@ -51,7 +51,7 @@ class StartActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
         }
 
 
-        //TODO: At this place we have a faked implementationf of Filter adapter class, change it for a Adapter implementation...
+        //TODO: At this place we have a faked implementation of a Filter adapter class, change it for a Adapter implementation...
 
         filter = object: Filter() {
             override fun performFiltering(constraint: CharSequence?): FilterResults {
@@ -69,14 +69,7 @@ class StartActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
                 Log.i(this::class.java.simpleName, "Constraints: $constraint. Results: $results")
             }
 
-
-
         }
-
-
-
-
-
 
     }
 
