@@ -15,15 +15,15 @@ import retrofit2.http.Query
 
 interface RestApi {
 
-    @GET("query")
+    @GET("infos")
     fun contracts(@Query("query") number: String): Call<List<ContractInfo>>
 
 
     companion object {
         val BASE_URL = "http://194.44.128.140:9090/demo/hs/"
 
-        val USER = "unload"
-        val PASSWORD = "mbuh"
+        val USER = "service"
+        val PASSWORD = "dim1971"
 
 
         fun service(context: Context): RestApi {

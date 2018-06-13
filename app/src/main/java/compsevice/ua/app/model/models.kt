@@ -46,11 +46,11 @@ data class ContractInfo(val uuid: String, val number: String, val owner: String,
                 .sum()
 
     fun matchesQuery(constraint: CharSequence): Boolean  = when {
-        number.contains(constraint) -> true
-        owner.contains(constraint) -> true
+        number.contains(other = constraint, ignoreCase = true) -> true
+        owner.contains(other = constraint, ignoreCase = true) -> true
         else -> {
-            counters.filter { it.factory.contains(constraint) }
-                    .first() != null
+            counters.filter { it.factory.contains(ignoreCase = true, other = constraint) }
+                    .firstOrNull() != null
         }
 
     }

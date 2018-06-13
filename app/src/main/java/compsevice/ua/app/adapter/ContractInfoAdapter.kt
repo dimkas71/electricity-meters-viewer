@@ -1,6 +1,9 @@
 package compsevice.ua.app.adapter
 
 import android.content.Context
+import android.content.Intent
+import android.os.Bundle
+import android.support.v4.content.ContextCompat.startActivity
 import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.GestureDetector
@@ -11,17 +14,24 @@ import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.Filterable
 import android.widget.TextView
+import compsevice.ua.app.MainActivity
 
 import java.lang.ref.WeakReference
 import java.util.ArrayList
 
 import compsevice.ua.app.R
+import compsevice.ua.app.activity.ContractInfoDetailActivity
 import compsevice.ua.app.adapter.ContractInfoAdapter.ViewHolder
 import compsevice.ua.app.model.ContractInfo
 import compsevice.ua.app.model.Counter
 import compsevice.ua.app.model.ServiceType
 
 class ContractInfoAdapter(private val context: Context, private var contracts: List<ContractInfo>?) : RecyclerView.Adapter<ContractInfoAdapter.ViewHolder>(), Filterable {
+
+    var listener: ContractInfoAdapter.OnClickListener? = null
+        set(value) {
+            field = value
+        }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
@@ -87,7 +97,7 @@ class ContractInfoAdapter(private val context: Context, private var contracts: L
     }
 
     override fun getItemCount(): Int {
-        return contracts!!.size
+        return contracts?.size ?: 0
     }
 
     override fun getFilter(): Filter {
@@ -103,8 +113,16 @@ class ContractInfoAdapter(private val context: Context, private var contracts: L
         return contracts!![position]
     }
 
+    inner class ViewHolder(parent: View) : RecyclerView.ViewHolder(parent), View.OnClickListener, View.OnLongClickListener {
 
-    class ViewHolder(parent: View) : RecyclerView.ViewHolder(parent) {
+        override fun onLongClick(v: View?): Boolean {
+            return true
+        }
+
+        override fun onClick(v: View?) {
+            Log.i(ViewHolder::class.java.simpleName, "OnClick clicked $this@ViewHolder.adapterPosition")
+            this@ContractInfoAdapter.listener?.onClick(this@ViewHolder.adapterPosition)
+        }
 
         var tvSectorNumber: TextView
         var tvContractNumber: TextView
@@ -122,6 +140,10 @@ class ContractInfoAdapter(private val context: Context, private var contracts: L
             tvCreditElectricity = parent.findViewById(R.id.text_credit_electricity)
             tvCreditVideo = parent.findViewById(R.id.text_credit_video)
             tvCreditService = parent.findViewById(R.id.text_credit_serivice)
+
+            parent.setOnClickListener(this)
+            parent.setOnLongClickListener(this)
+
         }
     }
 
@@ -159,72 +181,21 @@ class ContractInfoAdapter(private val context: Context, private var contracts: L
 
         override fun publishResults(constraint: CharSequence, results: Filter.FilterResults) {
             Log.i(TAG, "Publishing results on the Main thread. All count is: " + results.count)
-            adapter.get()?.update(results.values as List<ContractInfo>)
+            adapter.get()?.update(results.values as List<ContractInfo>?)
         }
 
-
         fun update(newInfos: List<ContractInfo>?) {
-            this.originalInfos = ArrayList(newInfos)
+            this.originalInfos = newInfos?.let { ArrayList(it) }
         }
 
         companion object {
-
             private val TAG = ContractInfoFilter::class.java.simpleName
         }
 
     }
 
-    class RecyclerTouchListener(context: Context, recyclerView: RecyclerView?, private val clickListener: ClickListener?) : RecyclerView.OnItemTouchListener {
-
-        private val gestureDetector: GestureDetector
-
-        init {
-            this.gestureDetector = GestureDetector(context, object : GestureDetector.SimpleOnGestureListener() {
-
-                override fun onSingleTapUp(e: MotionEvent): Boolean {
-                    return true
-                }
-
-                override fun onLongPress(e: MotionEvent) {
-                    val child = recyclerView?.findChildViewUnder(e.x, e.y)
-
-                    if (child != null && clickListener != null) {
-                        clickListener.onLongClick(child, recyclerView.getChildAdapterPosition(child))
-                    }
-                }
-            })
-
-        }
-
-        override fun onInterceptTouchEvent(rv: RecyclerView, e: MotionEvent): Boolean {
-
-            val child = rv.findChildViewUnder(e.x, e.y)
-            if (child != null && clickListener != null) {
-                if (e.action == MotionEvent.ACTION_UP) {
-                    clickListener.onClick(child, rv.getChildAdapterPosition(child))
-                }
-            }
-
-            return false
-        }
-
-        override fun onTouchEvent(rv: RecyclerView, e: MotionEvent) {}
-
-        override fun onRequestDisallowInterceptTouchEvent(disallowIntercept: Boolean) {}
-
-
-        interface ClickListener {
-
-            fun onClick(v: View, position: Int)
-
-            fun onLongClick(v: View, position: Int)
-        }
-
-        companion object {
-
-            private val TAG = RecyclerTouchListener::class.java.simpleName
-        }
+    interface OnClickListener {
+        fun onClick(itemId: Int)
     }
-
 
 }

@@ -32,10 +32,7 @@ import compsevice.ua.app.model.ContractInfo
 import compsevice.ua.app.rest.RestApi
 
 
-class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener, ContractInfoAdapter.RecyclerTouchListener.ClickListener {
-    override fun onLongClick(v: View, position: Int) {
-        Log.i(TAG, "Long click handled....")
-    }
+class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener, ContractInfoAdapter.OnClickListener {
 
     private val lastQuery = "NO_SUCH_ELEMENT"
 
@@ -49,7 +46,6 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener, Contra
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
 
         //1. ProgressBar
         progressBar = findViewById(R.id.progress_bar)
@@ -67,12 +63,11 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener, Contra
 
         recylcerView!!.addItemDecoration(itemDecoration)
 
-        filter = contractInfoAdapter!!.filter
+        filter = contractInfoAdapter?.filter
 
-        recylcerView!!.addOnItemTouchListener(ContractInfoAdapter.RecyclerTouchListener(applicationContext, recylcerView, this))
+        contractInfoAdapter?.listener = this
 
         recylcerView!!.setHasFixedSize(true)
-
 
     }
 
@@ -104,7 +99,6 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener, Contra
 
             }
         }
-
 
         return infos
 
@@ -156,17 +150,19 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener, Contra
 
     override fun onQueryTextChange(newText: String): Boolean {
         Log.i("SearchView", "Query a new text $newText")
-        filter!!.filter(newText)
+        filter?.filter(newText)
         return false
     }
 
-    override fun onClick(v: View, position: Int) {
-        val info = contractInfoAdapter!!.getDataAt(position)
-        Log.i(TAG, "Data for the position$info")
+    override fun onClick(itemId: Int) {
+        val contractInfo = contractInfoAdapter?.getDataAt(itemId)
+
+        Log.i(TAG, "Contract info $contractInfo")
 
         val intent = Intent(applicationContext, ContractInfoDetailActivity::class.java)
 
         startActivity(intent)
+
 
     }
 
@@ -205,11 +201,11 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener, Contra
             progressBar.get()?.setVisibility(View.GONE)
 
             val adapter = activity.get()?.contractInfoAdapter
-            adapter!!.update(cis)
+            adapter?.update(cis)
 
             val filter = activity.get()?.filter as ContractInfoAdapter.ContractInfoFilter?
 
-            filter!!.update(cis)
+            filter?.update(cis)
 
         }
 
