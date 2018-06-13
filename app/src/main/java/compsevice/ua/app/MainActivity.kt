@@ -34,7 +34,7 @@ import compsevice.ua.app.rest.RestApi
 
 class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener, ContractInfoAdapter.RecyclerTouchListener.ClickListener {
     override fun onLongClick(v: View, position: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        Log.i(TAG, "Long click handled....")
     }
 
     private val lastQuery = "NO_SUCH_ELEMENT"
@@ -182,12 +182,12 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener, Contra
 
         override fun doInBackground(vararg queries: String): List<ContractInfo>? {
 
-            val service = RestApi.service(RestApi.BASE_URL)
+            val service = activity.get()?.let { RestApi.service(it) }
 
             var cis: List<ContractInfo>? = ArrayList()
             try {
-                val response = service.contracts(queries[0]).execute()
-                cis = response.body()
+                val response = service?.contracts(queries[0])?.execute()
+                cis = response?.body()
             } catch (e: IOException) {
                 e.printStackTrace()
             }

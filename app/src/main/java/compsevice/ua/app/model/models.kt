@@ -34,11 +34,11 @@ class ServiceTypeAdapter {
 
 }
 
-data class Credit(val id: Long, val service: ServiceType, val counter: String, val credit: Double)
+data class Credit(val uuid: String, val service: ServiceType, val counter: String, val credit: Double)
 
-data class Counter(val id: Long, val factoryNumber: String, val value: Long)
+data class Counter(val uuid: String, val factory: String, val value: Long)
 
-data class ContractInfo(val id: Long, val number: String, val owner: String, val sectorNumber: Int, val counters: List<Counter>, val credits: List<Credit>) {
+data class ContractInfo(val uuid: String, val number: String, val owner: String, val sector: Int, val counters: List<Counter>, val credits: List<Credit>) {
 
     fun creditByService(service: ServiceType): Double =
         credits.filter { it.service == service }
@@ -49,7 +49,7 @@ data class ContractInfo(val id: Long, val number: String, val owner: String, val
         number.contains(constraint) -> true
         owner.contains(constraint) -> true
         else -> {
-            counters.filter { it.factoryNumber.contains(constraint) }
+            counters.filter { it.factory.contains(constraint) }
                     .first() != null
         }
 

@@ -32,7 +32,7 @@ class ContractInfoAdapter(private val context: Context, private var contracts: L
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         val contractInfo = contracts!![position]
-        holder.tvSectorNumber.text = context.resources.getString(R.string.text_sector_number, contractInfo.sectorNumber)
+        holder.tvSectorNumber.text = context.resources.getString(R.string.text_sector_number, contractInfo.sector)
         holder.tvContractNumber.text = context.resources.getString(R.string.text_contract_number,
                 contractInfo.number)
 
