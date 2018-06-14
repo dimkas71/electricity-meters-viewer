@@ -32,7 +32,7 @@ import compsevice.ua.app.model.ContractInfo
 import compsevice.ua.app.rest.RestApi
 
 
-class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener, ContractInfoAdapter.OnClickListener {
+class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
 
     private val lastQuery = "NO_SUCH_ELEMENT"
 
@@ -64,8 +64,6 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener, Contra
         recylcerView!!.addItemDecoration(itemDecoration)
 
         filter = contractInfoAdapter?.filter
-
-        contractInfoAdapter?.listener = this
 
         recylcerView!!.setHasFixedSize(true)
 
@@ -152,18 +150,6 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener, Contra
         Log.i("SearchView", "Query a new text $newText")
         filter?.filter(newText)
         return false
-    }
-
-    override fun onClick(itemId: Int) {
-        val contractInfo = contractInfoAdapter?.getDataAt(itemId)
-
-        Log.i(TAG, "Contract info $contractInfo")
-
-        val intent = Intent(applicationContext, ContractInfoDetailActivity::class.java)
-
-        startActivity(intent)
-
-
     }
 
     private class Downloader(activity: MainActivity, progressBar: ProgressBar?) : AsyncTask<String, Void, List<ContractInfo>?>() {

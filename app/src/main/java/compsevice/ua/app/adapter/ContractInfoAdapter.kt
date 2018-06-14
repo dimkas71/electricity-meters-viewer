@@ -28,11 +28,6 @@ import compsevice.ua.app.model.ServiceType
 
 class ContractInfoAdapter(private val context: Context, private var contracts: List<ContractInfo>?) : RecyclerView.Adapter<ContractInfoAdapter.ViewHolder>(), Filterable {
 
-    var listener: ContractInfoAdapter.OnClickListener? = null
-        set(value) {
-            field = value
-        }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
         val inflater = LayoutInflater.from(context)
@@ -121,7 +116,11 @@ class ContractInfoAdapter(private val context: Context, private var contracts: L
 
         override fun onClick(v: View?) {
             Log.i(ViewHolder::class.java.simpleName, "OnClick clicked $this@ViewHolder.adapterPosition")
-            this@ContractInfoAdapter.listener?.onClick(this@ViewHolder.adapterPosition)
+            //this@ContractInfoAdapter.listener?.onClick(this@ViewHolder.adapterPosition)
+            val intent = Intent(context, ContractInfoDetailActivity::class.java)
+
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            context.startActivity(intent)
         }
 
         var tvSectorNumber: TextView
@@ -193,9 +192,4 @@ class ContractInfoAdapter(private val context: Context, private var contracts: L
         }
 
     }
-
-    interface OnClickListener {
-        fun onClick(itemId: Int)
-    }
-
 }
