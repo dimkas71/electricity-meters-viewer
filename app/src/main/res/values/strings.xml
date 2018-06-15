@@ -22,6 +22,11 @@
     <string name="pref_connection_title">Connection settings</string>
     <string name="pref_search_variant">Search variant</string>
     <string name="pref_search_variant_summary">Search by: %1$s</string>
+    <string name="pref_begin_date_title">Begin date title</string>
+    <string name="pref_begin_date_summary">Begin date summary</string>
+    <string name="pref_begin_date_ok_button">OK</string>
+    <string name="pref_begin_date_cancel_button">Cancel</string>
+
 
     <string-array name="search_variant_titles">
         <item name="1">By contract number</item>

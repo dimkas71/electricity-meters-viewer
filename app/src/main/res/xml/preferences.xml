@@ -12,6 +12,12 @@
         android:defaultValue="1"/>
 
 
+    <compsevice.ua.app.activity.DatePickerPreference
+        android:key="perf_begin_date"
+        android:title="@string/pref_begin_date_title"
+        android:summary="@string/pref_begin_date_summary"
+        android:defaultValue="01/01/2018"/>
+
     <PreferenceCategory
         android:key="pref_connection"
         android:title="@string/pref_connection_title"
