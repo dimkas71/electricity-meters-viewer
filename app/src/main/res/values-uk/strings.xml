@@ -29,6 +29,9 @@
     <string name="pref_begin_date_cancel_button">Відміна</string>
     <string name="pref_begin_date_default_value">01/12/2017</string>
     <string name="pref_search_variant_default">По номеру договору</string>
+    <string name="contract_info_detail_tab_common">Загальна інформація</string>
+    <string name="contract_info_detail_tab_counter_history">Історія показчиків лічильника</string>
+    <string name="contract_info_detail_tab_payment_history">Історія оплат</string>
 
     <string-array name="search_variant_titles">
         <item name="1">По номеру договору</item>
