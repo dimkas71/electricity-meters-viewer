@@ -9,14 +9,14 @@
         android:entryValues="@array/search_variant_titles"
         android:negativeButtonText="@null"
         android:positiveButtonText="@null"
-        android:defaultValue="1"/>
+        android:defaultValue="@string/pref_search_variant_default"/>
 
 
     <compsevice.ua.app.activity.DatePickerPreference
-        android:key="perf_begin_date"
+        android:key="pref_begin_date"
         android:title="@string/pref_begin_date_title"
         android:summary="@string/pref_begin_date_summary"
-        android:defaultValue="01/01/2018"/>
+        android:defaultValue="@string/pref_begin_date_default_value"/>
 
     <PreferenceCategory
         android:key="pref_connection"
@@ -27,16 +27,19 @@
         <EditTextPreference
             android:key="pref_url"
             android:title="@string/pref_url_title"
-            android:summary="@string/pref_url_summary"/>
+            android:summary="@string/pref_url_summary"
+            android:defaultValue="http://194.44.128.140:9090/demo/hs/"/>
         <EditTextPreference
             android:key="pref_user"
             android:title="@string/pref_user_title"
-            android:summary="@string/pref_user_summary"/>
+            android:summary="@string/pref_user_summary"
+            android:defaultValue="service"/>
 
         <EditTextPreference
             android:key="pref_password"
             android:title="@string/pref_password_title"
-            android:password="true"/>
+            android:password="true"
+            android:defaultValue="fake password"/>
 
     </PreferenceCategory>
 

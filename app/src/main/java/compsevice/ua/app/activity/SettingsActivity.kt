@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.preference.PreferenceFragment
 import android.preference.PreferenceManager
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import compsevice.ua.app.R
+import compsevice.ua.app.asDate
 
 class SettingsActivity : AppCompatActivity() {
 
@@ -26,12 +26,11 @@ class SettingsActivity : AppCompatActivity() {
 
     class SettingsFragment : PreferenceFragment(), SharedPreferences.OnSharedPreferenceChangeListener {
         override fun onSharedPreferenceChanged(sp: SharedPreferences?, key: String?) {
-            Log.i(SettingsFragment::class.java.simpleName, sp?.getString(key, ""))
-
             when(key) {
-                URL_KEY -> updateSummary(URL_KEY)
-                USER_KEY -> updateSummary(USER_KEY)
-                SEARCH_VARIANT_KEY -> updateSummary(SEARCH_VARIANT_KEY)
+                URL_KEY -> updateSummary(URL_KEY, String::class)
+                USER_KEY -> updateSummary(USER_KEY, String::class)
+                SEARCH_VARIANT_KEY -> updateSummary(SEARCH_VARIANT_KEY, String::class)
+                BEGIN_DATE_KEY -> updateSummary(BEGIN_DATE_KEY, Long::class)
                 else -> ""
             }
 
@@ -42,7 +41,9 @@ class SettingsActivity : AppCompatActivity() {
             addPreferencesFromResource(R.xml.preferences)
 
             listOf(URL_KEY, USER_KEY, SEARCH_VARIANT_KEY)
-                    .forEach{updateSummary(it)}
+                    .forEach{updateSummary(it, String::class)}
+
+            updateSummary(BEGIN_DATE_KEY, Long::class)
 
         }
 
@@ -61,18 +62,31 @@ class SettingsActivity : AppCompatActivity() {
             const val URL_KEY = "pref_url"
             const val USER_KEY = "pref_user"
             const val SEARCH_VARIANT_KEY = "pref_search_variant"
+            const val BEGIN_DATE_KEY = "pref_begin_date"
 
             val MAP = mapOf(
                     URL_KEY to R.string.pref_url_summary,
                     USER_KEY to R.string.pref_user_summary,
-                    SEARCH_VARIANT_KEY to R.string.pref_search_variant_summary)
+                    SEARCH_VARIANT_KEY to R.string.pref_search_variant_summary,
+                    BEGIN_DATE_KEY to R.string.pref_begin_date_summary)
         }
 
-        private fun updateSummary(key: String) {
+        private fun <T> updateSummary(key: String, type: T) {
 
             val resId: Int = MAP[key] ?: R.string.pref_password_summary
 
-            findPreference(key)?.summary = getString(resId, preferenceScreen.sharedPreferences.getString(key, ""))
+
+            val sp = preferenceScreen.sharedPreferences
+
+            when(type) {
+
+                String::class -> findPreference(key)?.summary = getString(resId, sp.getString(key, ""))
+                Long::class -> findPreference(key)?.summary = getString(resId, sp.getLong(key, 0).asDate())
+            }
+
+
+
+
         }
 
 

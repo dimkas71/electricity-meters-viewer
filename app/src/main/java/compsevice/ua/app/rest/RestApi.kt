@@ -20,19 +20,13 @@ interface RestApi {
 
 
     companion object {
-        val BASE_URL = "http://194.44.128.140:9090/demo/hs/"
-
-        val USER = "service"
-        val PASSWORD = "dim1971"
-
-
         fun service(context: Context): RestApi {
 
             val sp = PreferenceManager.getDefaultSharedPreferences(context)
 
-            val url = sp.getString("pref_url", BASE_URL)
-            val user = sp.getString("pref_user", USER)
-            val password = sp.getString("pref_password", PASSWORD)
+            val url = sp.getString("pref_url", "")
+            val user = sp.getString("pref_user", "")
+            val password = sp.getString("pref_password", "")
 
             val client = OkHttpClient.Builder()
                     .addInterceptor(BasicAuthInterceptor(user, password))

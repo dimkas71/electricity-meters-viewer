@@ -23,13 +23,15 @@
     <string name="pref_connection_title">Параметри з\'єднання</string>
     <string name="pref_search_variant">Варіант пошуку</string>
     <string name="pref_search_variant_summary">Пошук: %1$s</string>
-    <string name="pref_begin_date_title">Begin date title</string>
-    <string name="pref_begin_date_summary">Begin date summary</string>
+    <string name="pref_begin_date_title">Дата початку для звітів</string>
+    <string name="pref_begin_date_summary">Значення: %1$s</string>
     <string name="pref_begin_date_ok_button">Вибір</string>
     <string name="pref_begin_date_cancel_button">Відміна</string>
+    <string name="pref_begin_date_default_value">01/12/2017</string>
+    <string name="pref_search_variant_default">По номеру договору</string>
 
     <string-array name="search_variant_titles">
-        <item name="1">По номеру договора</item>
+        <item name="1">По номеру договору</item>
         <item name="2">По номеру лічильника</item>
     </string-array>
 

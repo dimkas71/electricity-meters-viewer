@@ -10,12 +10,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.CalendarView
 import compsevice.ua.app.R
+import compsevice.ua.app.toDate
 import java.text.SimpleDateFormat
 import java.util.*
 
 @SuppressLint("NewApi")
 class DatePickerPreference(context: Context, attrs: AttributeSet) : DialogPreference(context, attrs), CalendarView.OnDateChangeListener {
-    private var date: String = ""
+
+    private var date: Long = 0
 
     private lateinit var calendarView: CalendarView
 
@@ -39,27 +41,30 @@ class DatePickerPreference(context: Context, attrs: AttributeSet) : DialogPrefer
         Log.i(TAG, "OnBindDialogView")
         calendarView = view?.findViewById(R.id.calendarView) ?: CalendarView(context)
         calendarView.setOnDateChangeListener(this)
+        calendarView.date = date
         super.onBindDialogView(view)
     }
 
     override fun onDialogClosed(positiveResult: Boolean) {
         if (positiveResult) {
-            val formatter = SimpleDateFormat("dd/MM/yyyy")
-            date = formatter.format(calendar.time)
-            persistString(date)
+            date = calendar.timeInMillis
+            persistLong(date)
         }
     }
 
     override fun onSetInitialValue(restorePersistedValue: Boolean, defaultValue: Any?) {
         if (restorePersistedValue) {
-            date = getPersistedString(DEFAULT_VALUE)
+            date = getPersistedLong(0)
         } else {
-            date = defaultValue as String
-            persistString(date)
+            persistLong(date)
         }
     }
 
-    override fun onGetDefaultValue(a: TypedArray?, index: Int): Any = a?.getString(index) ?: ""
+    override fun onGetDefaultValue(a: TypedArray?, index: Int): Any {
+       val defaultValue = a?.getString(index) ?: "01/01/1970"
+       date = SimpleDateFormat("dd/MM/yyyy").parse(defaultValue).time
+        return date
+    }
 
     companion object {
         val DEFAULT_VALUE = ""
