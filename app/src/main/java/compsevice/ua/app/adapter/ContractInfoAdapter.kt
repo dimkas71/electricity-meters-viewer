@@ -26,6 +26,8 @@ import compsevice.ua.app.model.ContractInfo
 import compsevice.ua.app.model.Counter
 import compsevice.ua.app.model.ServiceType
 
+val KEY_CONTRACT = "KEY_CONTRACT"
+
 class ContractInfoAdapter(private val context: Context, private var contracts: List<ContractInfo>?) : RecyclerView.Adapter<ContractInfoAdapter.ViewHolder>(), Filterable {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -118,6 +120,11 @@ class ContractInfoAdapter(private val context: Context, private var contracts: L
             Log.i(ViewHolder::class.java.simpleName, "OnClick clicked $this@ViewHolder.adapterPosition")
             //this@ContractInfoAdapter.listener?.onClick(this@ViewHolder.adapterPosition)
             val intent = Intent(context, ContractInfoDetailActivity::class.java)
+
+            val contract = contracts?.get(this@ViewHolder.adapterPosition)
+
+            intent.putExtra(KEY_CONTRACT, contract)
+
 
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             context.startActivity(intent)

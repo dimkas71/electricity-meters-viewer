@@ -1,9 +1,11 @@
 package compsevice.ua.app.model
 
+import android.os.Parcel
+import android.os.Parcelable
 import com.squareup.moshi.FromJson
 import com.squareup.moshi.ToJson
 
-enum class ServiceType(val alias: String) {
+enum class ServiceType(val alias: String)  {
 
     Electricity("ELECTRICITY"),
     Service("SERVICE"),
@@ -34,11 +36,75 @@ class ServiceTypeAdapter {
 
 }
 
-data class Credit(val uuid: String, val service: ServiceType, val counter: String, val credit: Double)
+data class Credit(val uuid: String, val service: ServiceType, val counter: String, val credit: Double) : Parcelable {
+    constructor(parcel: Parcel) : this(
+            parcel.readString(),
+            ServiceType.toServiceType(parcel.readString()),
+            parcel.readString(),
+            parcel.readDouble()) {
+    }
 
-data class Counter(val uuid: String, val factory: String, val value: Long)
+    override fun writeToParcel(parcel: Parcel, flags: Int) {
+        parcel.writeString(uuid)
+        parcel.writeString(service.alias)
+        parcel.writeString(counter ?: "")
+        parcel.writeDouble(credit)
+    }
 
-data class ContractInfo(val uuid: String, val number: String, val owner: String, val sector: Int, val counters: List<Counter>, val credits: List<Credit>) {
+    override fun describeContents(): Int {
+        return 0
+    }
+
+    companion object CREATOR : Parcelable.Creator<Credit> {
+        override fun createFromParcel(parcel: Parcel): Credit {
+            return Credit(parcel)
+        }
+
+        override fun newArray(size: Int): Array<Credit?> {
+            return arrayOfNulls(size)
+        }
+    }
+}
+
+data class Counter(val uuid: String, val factory: String, val value: Long) : Parcelable {
+
+    constructor(parcel: Parcel) : this(
+            parcel.readString(),
+            parcel.readString(),
+            parcel.readLong()) {
+    }
+
+    override fun writeToParcel(parcel: Parcel, flags: Int) {
+        parcel.writeString(uuid)
+        parcel.writeString(factory ?: "")
+        parcel.writeLong(value)
+    }
+
+    override fun describeContents(): Int {
+        return 0
+    }
+
+    companion object CREATOR : Parcelable.Creator<Counter> {
+        override fun createFromParcel(parcel: Parcel): Counter {
+            return Counter(parcel)
+        }
+
+        override fun newArray(size: Int): Array<Counter?> {
+            return arrayOfNulls(size)
+        }
+    }
+}
+
+data class ContractInfo(val uuid: String, val number: String, val owner: String, val sector: Int, val counters: List<Counter>, val credits: List<Credit>) : Parcelable {
+
+    constructor(parcel: Parcel) : this(
+            parcel.readString(),
+            parcel.readString(),
+            parcel.readString(),
+            parcel.readInt(),
+            parcel.createTypedArrayList(Counter),
+            parcel.createTypedArrayList(Credit)) {
+    }
 
     fun creditByService(service: ServiceType): Double =
         credits.filter { it.service == service }
@@ -54,4 +120,28 @@ data class ContractInfo(val uuid: String, val number: String, val owner: String,
         }
 
     }
+
+    override fun writeToParcel(parcel: Parcel, flags: Int) {
+        parcel.writeString(uuid)
+        parcel.writeString(number)
+        parcel.writeString(owner)
+        parcel.writeInt(sector)
+        parcel.writeTypedList(counters)
+        parcel.writeTypedList(credits)
+    }
+
+    override fun describeContents(): Int {
+        return 0
+    }
+
+    companion object CREATOR : Parcelable.Creator<ContractInfo> {
+        override fun createFromParcel(parcel: Parcel): ContractInfo {
+            return ContractInfo(parcel)
+        }
+
+        override fun newArray(size: Int): Array<ContractInfo?> {
+            return arrayOfNulls(size)
+        }
+    }
+
 }
