@@ -11,4 +11,5 @@
     <dimen name="text_view_header">20sp</dimen>
     <dimen name="text_to_from">16sp</dimen>
     <dimen name="text_view_up_down">36dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>
