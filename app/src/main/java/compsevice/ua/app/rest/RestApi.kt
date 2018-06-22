@@ -5,6 +5,7 @@ import android.preference.PreferenceManager
 import com.squareup.moshi.Moshi
 import compsevice.ua.app.model.ContractInfo
 import compsevice.ua.app.model.ServiceTypeAdapter
+import compsevice.ua.app.viewmodel.Client
 import okhttp3.OkHttpClient
 import retrofit2.Call
 import retrofit2.Retrofit
@@ -17,6 +18,9 @@ interface RestApi {
 
     @GET("infos")
     fun contracts(@Query("query") number: String): Call<List<ContractInfo>>
+
+    @GET("detail")
+    fun contract(@Query("query") contractUUID: String): Call<Client>
 
 
     companion object {

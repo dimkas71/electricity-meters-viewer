@@ -118,7 +118,6 @@ class ContractInfoAdapter(private val context: Context, private var contracts: L
 
         override fun onClick(v: View?) {
             Log.i(ViewHolder::class.java.simpleName, "OnClick clicked $this@ViewHolder.adapterPosition")
-            //this@ContractInfoAdapter.listener?.onClick(this@ViewHolder.adapterPosition)
             val intent = Intent(context, ContractInfoDetailActivity::class.java)
 
             val contract = contracts?.get(this@ViewHolder.adapterPosition)
