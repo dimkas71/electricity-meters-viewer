@@ -1,7 +1,9 @@
 package compsevice.ua.app.activity
 
+import android.arch.lifecycle.ViewModelProviders
 import android.content.Intent
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.support.design.widget.FloatingActionButton
 import android.support.design.widget.Snackbar
 import android.support.design.widget.TabLayout
@@ -13,8 +15,18 @@ import android.view.MenuItem
 import compsevice.ua.app.R
 import compsevice.ua.app.adapter.KEY_CONTRACT
 import compsevice.ua.app.model.ContractInfo
+import compsevice.ua.app.rest.RestApi
+import compsevice.ua.app.viewmodel.Client
+import compsevice.ua.app.viewmodel.ContractInfoViewModel
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import java.text.SimpleDateFormat
+import java.util.*
 
 class ContractInfoDetailActivity : AppCompatActivity() {
+
+    private lateinit var model: ContractInfoViewModel
 
     lateinit var contractUUID: String
 
@@ -22,6 +34,13 @@ class ContractInfoDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contract_info_detail_new)
 
+
+        val contract: ContractInfo = intent.extras[KEY_CONTRACT] as ContractInfo
+        contractUUID = contract.uuid
+        Log.i(ContractInfoDetailActivity::class.java.simpleName, "Contract $contract")
+
+        model = ViewModelProviders.of(this).get(ContractInfoViewModel::class.java)
+        updateDataAsync()
 
         val adapter = ViewPagerAdapter(applicationContext, supportFragmentManager)
 
@@ -33,18 +52,39 @@ class ContractInfoDetailActivity : AppCompatActivity() {
 
         tabs.setupWithViewPager(pager)
 
-        val contract: ContractInfo = intent.extras[KEY_CONTRACT] as ContractInfo
-
-        contractUUID = contract.uuid
-
-        Log.i(ContractInfoDetailActivity::class.java.simpleName, "Contract $contract")
-
         val fab = findViewById<FloatingActionButton>(R.id.fab)
 
         fab.setOnClickListener {
            Snackbar.make(it, "Contractinfo uuid: $contractUUID", Snackbar.LENGTH_LONG)
         }
 
+
+    }
+
+    private fun updateDataAsync() {
+        val service = RestApi.service(this)
+
+        val beginDate = Date(PreferenceManager.getDefaultSharedPreferences(applicationContext).getLong("pref_begin_date", 0))
+
+        val formattedDate = SimpleDateFormat("yyyyMMdd").format(beginDate)
+
+        Log.i(ContractInfoDetailActivity::class.java.simpleName, "Begin date: $formattedDate")
+
+
+        service.contract(contractUUID, formattedDate).enqueue(object: Callback<compsevice.ua.app.viewmodel.ContractInfo> {
+            override fun onFailure(call: Call<compsevice.ua.app.viewmodel.ContractInfo>?, t: Throwable?) {
+                Log.i(ContractInfoDetailActivity::class.java.simpleName, "Error happend: ${t?.message}")
+            }
+
+            override fun onResponse(call: Call<compsevice.ua.app.viewmodel.ContractInfo>?, response: Response<compsevice.ua.app.viewmodel.ContractInfo>?) {
+                response?.body()?.let {
+                    Log.i(ContractInfoDetailActivity::class.java.simpleName, "Contract info: $it")
+                    model.updateDate(it)
+                }
+            }
+
+
+        })
 
 
 

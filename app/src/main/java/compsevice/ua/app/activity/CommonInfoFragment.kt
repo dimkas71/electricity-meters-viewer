@@ -4,13 +4,14 @@ import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import compsevice.ua.app.R
 import compsevice.ua.app.viewmodel.Client
+import compsevice.ua.app.viewmodel.ContractInfo
 import compsevice.ua.app.viewmodel.ContractInfoViewModel
+import kotlinx.android.synthetic.main.contract_info_detail_common.*
 
 
 class CommonInfoFragment : Fragment() {
@@ -35,8 +36,13 @@ class CommonInfoFragment : Fragment() {
             ViewModelProviders.of(it).get(ContractInfoViewModel::class.java)
         } ?: ContractInfoViewModel()
 
-        model?.retreiveClient()?.observe(this , Observer<Client> {
-            Log.i(CommonInfoFragment::class.java.simpleName, "Client: $it")
+        model?.retreiveData()?.observe(this , Observer<ContractInfo> {
+
+            fullName.text = it?.client?.fullName
+            address.text = it?.client?.address
+            telephone.text = it?.client?.telephone
+            individualNumber.text = it?.client?.individualNumber
+
         })
 
 

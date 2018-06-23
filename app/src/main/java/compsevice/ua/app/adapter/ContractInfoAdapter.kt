@@ -1,5 +1,6 @@
 package compsevice.ua.app.adapter
 
+import android.arch.lifecycle.ViewModelProviders
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -122,8 +123,8 @@ class ContractInfoAdapter(private val context: Context, private var contracts: L
 
             val contract = contracts?.get(this@ViewHolder.adapterPosition)
 
-            intent.putExtra(KEY_CONTRACT, contract)
 
+            intent.putExtra(KEY_CONTRACT, contract)
 
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             context.startActivity(intent)
