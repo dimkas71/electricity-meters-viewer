@@ -55,13 +55,14 @@ class ContractInfoDetailActivity : AppCompatActivity() {
         val fab = findViewById<FloatingActionButton>(R.id.fab)
 
         fab.setOnClickListener {
-           Snackbar.make(it, "Contractinfo uuid: $contractUUID", Snackbar.LENGTH_LONG)
+           updateDataAsync()
         }
 
 
     }
 
     private fun updateDataAsync() {
+
         val service = RestApi.service(this)
 
         val beginDate = Date(PreferenceManager.getDefaultSharedPreferences(applicationContext).getLong("pref_begin_date", 0))
