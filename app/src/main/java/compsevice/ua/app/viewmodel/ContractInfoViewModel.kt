@@ -21,6 +21,7 @@ class ContractInfoViewModel : ViewModel() {
 
     private var contractInfo: MutableLiveData<ContractInfo> = MutableLiveData<ContractInfo>()
 
+
     fun retreiveData(): LiveData<ContractInfo> = contractInfo
 
     fun updateDate(ci: ContractInfo) {

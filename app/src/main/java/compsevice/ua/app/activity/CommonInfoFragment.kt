@@ -38,6 +38,8 @@ class CommonInfoFragment : Fragment() {
 
         model?.retreiveData()?.observe(this , Observer<ContractInfo> {
 
+
+            contractNumber.text = context?.resources?.getString(R.string.text_contract_number, it?.contractNumber)
             fullName.text = it?.client?.fullName
             address.text = it?.client?.address
             telephone.text = it?.client?.telephone

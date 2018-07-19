@@ -12,4 +12,5 @@
     <dimen name="text_to_from">16sp</dimen>
     <dimen name="text_view_up_down">36dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="contract_info_detail_common_contract_number_text_size">24sp</dimen>
 </resources>
