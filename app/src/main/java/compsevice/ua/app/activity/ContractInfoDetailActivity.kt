@@ -13,6 +13,7 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import compsevice.ua.app.R
+import compsevice.ua.app.activity.viewmodel.CurrentContractInfoViewModel
 import compsevice.ua.app.adapter.KEY_CONTRACT
 import compsevice.ua.app.model.ContractInfo
 import compsevice.ua.app.rest.RestApi
@@ -27,6 +28,7 @@ import java.util.*
 class ContractInfoDetailActivity : AppCompatActivity() {
 
     private lateinit var model: ContractInfoViewModel
+    private lateinit var currentContractInfoModel: CurrentContractInfoViewModel
 
     lateinit var contractUUID: String
 
@@ -36,6 +38,11 @@ class ContractInfoDetailActivity : AppCompatActivity() {
 
 
         val contract: ContractInfo = intent.extras[KEY_CONTRACT] as ContractInfo
+
+        currentContractInfoModel = ViewModelProviders.of(this).get(CurrentContractInfoViewModel::class.java)
+
+        currentContractInfoModel.updateContractInfo(contract)
+
         contractUUID = contract.uuid
         Log.i(ContractInfoDetailActivity::class.java.simpleName, "Contract $contract")
 

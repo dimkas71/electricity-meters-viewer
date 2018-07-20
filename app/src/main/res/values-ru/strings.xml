@@ -34,6 +34,10 @@
     <string name="contract_info_detail_tab_counter_history">История показаний счетчиков</string>
     <string name="contract_info_detail_tab_payment_history">История оплат</string>
 
+    <string name="text_counter_info_label">Текущие значения счетчиков:</string>
+    <string name="text_counter">S/N:</string>
+    <string name="text_counter_info_credit">Долги по договору:</string>
+
     <string-array name="search_variant_titles">
         <item name="1">По номеру договора</item>
         <item name="2">По номеру счетчика</item>

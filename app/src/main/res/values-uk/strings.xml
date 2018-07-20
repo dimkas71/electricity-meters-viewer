@@ -33,6 +33,10 @@
     <string name="contract_info_detail_tab_counter_history">Історія показчиків лічильника</string>
     <string name="contract_info_detail_tab_payment_history">Історія оплат</string>
 
+    <string name="text_counter_info_label">Поточні значення лічильників:</string>
+    <string name="text_counter">S/N:</string>
+    <string name="text_counter_info_credit">Борги по договору:</string>
+
     <string-array name="search_variant_titles">
         <item name="1">По номеру договору</item>
         <item name="2">По номеру лічильника</item>

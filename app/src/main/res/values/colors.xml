@@ -5,8 +5,8 @@
     <color name="colorAccent">#ff4081</color>
     <color name="colorListBackground">#E0F2F1</color>
     <color name="colorTextContent">#000000</color>
-    <color name="colorCounters">#00796B</color>
+    <color name="colorCounters">#00796b</color>
     <color name="colorCredit">#00796B</color>
-    <color name="colorCreditRed">#FF4081</color>
+    <color name="colorCreditRed">#ff4081</color>
     <color name="colorGray">#e2dfe9</color>
 </resources>
