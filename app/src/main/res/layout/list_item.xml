@@ -27,13 +27,11 @@
         android:id="@+id/text_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:text="@string/text_contract_number"
         android:textColor="@color/colorTextContent"
         android:textSize="@dimen/text_contract_number_size"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
 
     <TextView
         android:id="@+id/text_owner"

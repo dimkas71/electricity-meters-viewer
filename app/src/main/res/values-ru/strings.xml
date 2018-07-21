@@ -37,6 +37,11 @@
     <string name="text_counter_info_label">Текущие значения счетчиков:</string>
     <string name="text_counter">S/N:</string>
     <string name="text_counter_info_credit">Долги по договору:</string>
+    <string name="text_client_info_label">Информация о клиенте:</string>
+    <string name="text_common_info_address">Адрес: %1$s</string>
+
+    <string name="text_common_info_telephone">Телефон: %1$s</string>
+    <string name="text_common_info_individual_number">Инд. номер: %1$s</string>
 
     <string-array name="search_variant_titles">
         <item name="1">По номеру договора</item>

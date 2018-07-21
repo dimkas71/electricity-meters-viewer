@@ -41,5 +41,11 @@
     <string name="text_counter_info_label">Current counter\'s values:</string>
     <string name="text_counter">S/N:</string>
     <string name="text_counter_info_credit">Current credit info:</string>
+    <string name="text_client_info_label">Client info:</string>
+
+    <string name="text_common_info_address">Address: %1$s</string>
+    <string name="text_common_info_telephone">Telephone: %1$s</string>
+    <string name="text_common_info_individual_number">Ind.Number: %1$s</string>
+
 
 </resources>

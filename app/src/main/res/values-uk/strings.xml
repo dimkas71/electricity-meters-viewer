@@ -36,6 +36,11 @@
     <string name="text_counter_info_label">Поточні значення лічильників:</string>
     <string name="text_counter">S/N:</string>
     <string name="text_counter_info_credit">Борги по договору:</string>
+    <string name="text_client_info_label">Інформація про клієнта:</string>
+    <string name="text_common_info_address">Адреса: %1$s</string>
+
+    <string name="text_common_info_telephone">Телефон: %1$s</string>
+    <string name="text_common_info_individual_number">Індивід. номер: %1$s</string>
 
     <string-array name="search_variant_titles">
         <item name="1">По номеру договору</item>
