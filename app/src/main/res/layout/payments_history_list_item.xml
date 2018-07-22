@@ -4,72 +4,59 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:id="@+id/paymentsItems"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/paymentsListPeriod"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/colorPrimary"
             android:gravity="left"
-            android:text="@string/text_payments_header_period"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
+            android:text="20.01.18"
+            android:textColor="@color/colorTextContent"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/paymentsListCounter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:gravity="center"
-            android:text="@string/text_payments_header_counter"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
+            android:gravity="left"
+            android:text="12345678"
+            android:textColor="@color/colorTextContent"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/paymentsListAccrued"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:gravity="center"
-            android:text="@string/text_payments_header_accrued"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
+            android:gravity="left"
+            android:text="123.24"
+            android:textColor="@color/colorTextContent"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/paymentsListPaidFor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/colorPrimary"
             android:gravity="center"
-            android:text="@string/text_payments_header_paidfor"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
+            android:text="124.00"
+            android:textColor="@color/colorTextContent"
+            android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/paymentsHistoryList"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/paymentsItems" />
 </android.support.constraint.ConstraintLayout>

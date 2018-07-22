@@ -10,7 +10,7 @@ data class Client(val uuid: String, val fullName: String, val address: String, v
 
 data class CounterValuesHistory(val period: Date, val counter: String, val value: Long, val consumption: Long)
 
-data class PaymentsHistory(val period: Date, val counter: String, val accured: Double, val paid: Double)
+data class PaymentsHistory(val period: Date, val counter: String, val accrued: Double, val paid: Double)
 
 data class ContractInfo(val contractNumber: String, val sectorNumber: Int, val paymentDay: Int,
                         val client: Client, val countersHistory: List<CounterValuesHistory>,

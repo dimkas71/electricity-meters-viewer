@@ -41,6 +41,14 @@
 
     <string name="text_common_info_telephone">Телефон: %1$s</string>
     <string name="text_common_info_individual_number">Індивід. номер: %1$s</string>
+    <string name="text_kvt">Квт.</string>
+    <string name="text_payments_header_period">Період</string>
+    <string name="text_payments_header_counter">Лічильник</string>
+    <string name="text_payments_header_accrued">Нараховано</string>
+    <string name="text_payments_header_paidfor">Оплочено</string>
+    <string name="menu_title_consuming">Споживання по секторам</string>
+    <string name="text_consuming_sector_number">Сектор №: %1$s</string>
+    <string name="text_consuming_value">%1$s (Квт.)</string>
 
     <string-array name="search_variant_titles">
         <item name="1">По номеру договору</item>

@@ -61,7 +61,10 @@ class CounterValuesAdapter(val items: List<CounterValuesHistory>) : BaseExpandab
         item?.let {
             periodTv.text = formatter.format(it.period)
             valueTv.text = it.value.toString()
-            consumtionTv.text = it.consumption.toString()
+
+            val textKvt = parent?.context?.getString(R.string.text_kvt)
+
+            consumtionTv.text = "${it.consumption.toString()} ($textKvt)"
         }
 
         return view

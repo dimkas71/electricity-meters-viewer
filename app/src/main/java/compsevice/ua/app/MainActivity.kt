@@ -26,6 +26,7 @@ import java.util.ArrayList
 import java.util.Arrays
 
 import compsevice.ua.app.activity.ContractInfoDetailActivity
+import compsevice.ua.app.activity.ElectricityConsumingActivity
 import compsevice.ua.app.activity.SettingsActivity
 import compsevice.ua.app.adapter.ContractInfoAdapter
 import compsevice.ua.app.model.ContractInfo
@@ -120,6 +121,10 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
             R.id.action_settings -> {
                 val i = Intent(applicationContext, SettingsActivity::class.java)
                 startActivity(i)
+                return true
+            }
+            R.id.action_consuming -> {
+                startActivity(Intent(applicationContext, ElectricityConsumingActivity::class.java))
                 return true
             }
             else -> return super.onOptionsItemSelected(item)

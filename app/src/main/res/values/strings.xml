@@ -46,6 +46,14 @@
     <string name="text_common_info_address">Address: %1$s</string>
     <string name="text_common_info_telephone">Telephone: %1$s</string>
     <string name="text_common_info_individual_number">Ind.Number: %1$s</string>
+    <string name="text_kvt">Kvt</string>
+    <string name="text_payments_header_period">Period</string>
+    <string name="text_payments_header_counter">Counter</string>
+    <string name="text_payments_header_accrued">Accrued</string>
+    <string name="text_payments_header_paidfor">Paid for</string>
+    <string name="menu_title_consuming">Consuming by sectors</string>
+    <string name="text_consuming_sector_number">Sector number: %1$s</string>
+    <string name="text_consuming_value">%1$s (Kvt)</string>
 
 
 </resources>
