@@ -21,9 +21,9 @@ class ElectricityConsumingAdapter(val items: List<ConsumingBySectors>) : Recycle
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         fun bind(data: ConsumingBySectors) {
 
-            //1. sector number
+            //1. sectorNumber number
             val sectorNumberEl = itemView.findViewById<TextView>(R.id.sectorNumber)
-            sectorNumberEl.text = itemView.context.getString(R.string.text_sector_number, data.sector)
+            sectorNumberEl.text = itemView.context.getString(R.string.text_sector_number, data.sectorNumber)
 
             //2. electricity consuming
             val consumingEl = itemView.findViewById<TextView>(R.id.consumption)

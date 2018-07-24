@@ -5,6 +5,7 @@ import android.preference.PreferenceManager
 import com.squareup.moshi.FromJson
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.ToJson
+import compsevice.ua.app.activity.model.ConsumingBySectors
 import compsevice.ua.app.model.ContractInfo
 import compsevice.ua.app.model.ServiceTypeAdapter
 import okhttp3.OkHttpClient
@@ -35,6 +36,9 @@ interface RestApi {
 
     @GET("detail")
     fun contract(@Query("uuid") contractUUID: String, @Query("beginDate") beginDate: String): Call<compsevice.ua.app.viewmodel.ContractInfo>
+
+    @GET("consuming")
+    fun consuming(@Query("period") period: String): Call<List<ConsumingBySectors>>
 
     companion object {
         fun service(context: Context): RestApi {

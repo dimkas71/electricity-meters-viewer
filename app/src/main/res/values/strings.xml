@@ -54,6 +54,7 @@
     <string name="menu_title_consuming">Consuming by sectors</string>
     <string name="text_consuming_sector_number">Sector number: %1$s</string>
     <string name="text_consuming_value">%1$s (Kvt)</string>
+    <string name="period_button_text">Choose period...</string>
 
 
 </resources>

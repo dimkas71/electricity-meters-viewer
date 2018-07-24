@@ -49,6 +49,7 @@
     <string name="menu_title_consuming">Споживання по секторам</string>
     <string name="text_consuming_sector_number">Сектор №: %1$s</string>
     <string name="text_consuming_value">%1$s (Квт.)</string>
+    <string name="period_button_text">Вибір періоду...</string>
 
     <string-array name="search_variant_titles">
         <item name="1">По номеру договору</item>
