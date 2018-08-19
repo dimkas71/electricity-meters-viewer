@@ -93,8 +93,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@mipmap/ic_electricity"
-                app:srcCompat="@mipmap/ic_electricity" />
+                android:src="@mipmap/ic_electricity_2"
+                app:srcCompat="@mipmap/ic_electricity_2" />
 
             <TextView
                 android:id="@+id/text_credit_electricity"
@@ -118,8 +118,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@mipmap/ic_video"
-                app:srcCompat="@mipmap/ic_video" />
+                android:src="@mipmap/ic_video_2"
+                app:srcCompat="@mipmap/ic_video_2" />
 
             <TextView
                 android:id="@+id/text_credit_video"
@@ -143,8 +143,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@mipmap/ic_service_round"
-                app:srcCompat="@mipmap/ic_service_round" />
+                android:src="@mipmap/ic_service_2"
+                app:srcCompat="@mipmap/ic_service_2" />
 
             <TextView
                 android:id="@+id/text_credit_serivice"

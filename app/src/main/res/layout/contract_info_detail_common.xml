@@ -116,7 +116,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@mipmap/ic_electricity_round" />
+            app:srcCompat="@mipmap/ic_electricity_2" />
 
         <TextView
             android:id="@+id/textCreditElectricity"
@@ -134,7 +134,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@mipmap/ic_video_round" />
+            app:srcCompat="@mipmap/ic_video_2" />
 
         <TextView
             android:id="@+id/textCreditVideo"
@@ -151,7 +151,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@mipmap/ic_service_round" />
+            app:srcCompat="@mipmap/ic_service_2" />
 
         <TextView
             android:id="@+id/textCreditService"
