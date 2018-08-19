@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.AsyncTask
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
@@ -25,7 +26,6 @@ import java.lang.ref.WeakReference
 import java.util.ArrayList
 import java.util.Arrays
 
-import compsevice.ua.app.activity.ContractInfoDetailActivity
 import compsevice.ua.app.activity.ElectricityConsumingActivity
 import compsevice.ua.app.activity.SettingsActivity
 import compsevice.ua.app.adapter.ContractInfoAdapter
@@ -173,7 +173,21 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
 
             var cis: List<ContractInfo>? = ArrayList()
             try {
-                val response = service?.contracts(queries[0])?.execute()
+
+                val queryType = activity.get()?.let {
+                    val pm = PreferenceManager.getDefaultSharedPreferences(it)
+                    val variantName = pm.getString(SettingsActivity.SettingsFragment.SEARCH_VARIANT_KEY, "a value")
+
+                    val foundIndex: Int = it.resources.getStringArray(R.array.search_variant_titles).indexOfFirst { it.equals(variantName) }
+
+                    if (foundIndex == -1) {
+                        0
+                    } else {
+                        foundIndex
+                    }
+                }
+                Log.i("Downloader", "Search variant: $queryType")
+                val response = queryType?.let { service?.contracts(queries[0], it)?.execute() }
                 cis = response?.body()
             } catch (e: IOException) {
                 e.printStackTrace()

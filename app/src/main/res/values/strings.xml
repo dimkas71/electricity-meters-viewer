@@ -36,6 +36,7 @@
     <string-array name="search_variant_titles">
         <item name="1">By contract number</item>
         <item name="2">By counter number</item>
+        <item name="3">By client description</item>
     </string-array>
 
     <string name="text_counter_info_label">Current counter\'s values:</string>

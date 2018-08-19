@@ -54,6 +54,7 @@
     <string-array name="search_variant_titles">
         <item name="1">По номеру договору</item>
         <item name="2">По номеру лічильника</item>
+        <item name="3">По імені клієнта</item>
     </string-array>
 
 </resources>

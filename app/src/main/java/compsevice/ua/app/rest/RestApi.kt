@@ -32,7 +32,7 @@ class DateJsonAdapter {
 interface RestApi {
 
     @GET("infos")
-    fun contracts(@Query("query") number: String): Call<List<ContractInfo>>
+    fun contracts(@Query("query") number: String, @Query("qtype") type: Int): Call<List<ContractInfo>>
 
     @GET("detail")
     fun contract(@Query("uuid") contractUUID: String, @Query("beginDate") beginDate: String): Call<compsevice.ua.app.viewmodel.ContractInfo>

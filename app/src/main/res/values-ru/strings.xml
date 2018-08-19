@@ -55,6 +55,7 @@
     <string-array name="search_variant_titles">
         <item name="1">По номеру договора</item>
         <item name="2">По номеру счетчика</item>
+        <item name="3">По наименованию клиента</item>
     </string-array>
 
 </resources>
