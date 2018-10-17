@@ -66,18 +66,20 @@ data class Credit(val uuid: String, val service: ServiceType, val counter: Strin
     }
 }
 
-data class Counter(val uuid: String, val factory: String, val value: Long) : Parcelable {
+data class Counter(val uuid: String, val factory: String, val value: Long, val contractNumber: String) : Parcelable {
 
     constructor(parcel: Parcel) : this(
             parcel.readString(),
             parcel.readString(),
-            parcel.readLong()) {
+            parcel.readLong(),
+            parcel.readString()) {
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(uuid)
         parcel.writeString(factory ?: "")
         parcel.writeLong(value)
+        parcel.writeString(contractNumber ?: "")
     }
 
     override fun describeContents(): Int {

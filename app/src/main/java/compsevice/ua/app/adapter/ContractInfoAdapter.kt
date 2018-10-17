@@ -48,12 +48,15 @@ class ContractInfoAdapter(private val context: Context, private var contracts: L
 
         val sb = StringBuilder()
 
-        for ((_, factoryNumber, value) in contractInfo.counters) {
+        for ((_, factoryNumber, value, contractNumber) in contractInfo.counters) {
 
             sb.append(context.resources.getString(R.string.text_counters_factory_number))
                     .append(factoryNumber)
                     .append("    ")
                     .append(String.format("%s %d", context.resources.getString(R.string.text_counters_value), value))
+                    .append("    ")
+                    .append(context.resources.getString(R.string.text_counters_contract_number))
+                    .append(contractNumber)
                     .append("\n")
         }
 
