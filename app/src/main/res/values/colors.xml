@@ -9,4 +9,6 @@
     <color name="colorCredit">#00796b</color>
     <color name="colorCreditRed">#ff4081</color>
     <color name="colorGray">#e2dfe9</color>
+    <color name="colorCheckDate">#F30707</color>
+    <color name="colorCheckDateStandard">#035A52</color>
 </resources>

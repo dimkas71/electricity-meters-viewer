@@ -159,4 +159,13 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/checkDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_date_empty_date"
+        app:layout_constraintEnd_toStartOf="@+id/text_sector_number"
+        app:layout_constraintStart_toEndOf="@+id/text_number"
+        tools:layout_editor_absoluteY="2dp" />
+
 </android.support.constraint.ConstraintLayout>

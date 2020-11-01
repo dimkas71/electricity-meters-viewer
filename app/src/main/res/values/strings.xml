@@ -57,6 +57,12 @@
     <string name="text_consuming_sector_number">Sector number: %1$s</string>
     <string name="text_consuming_value">%1$s (Kvt)</string>
     <string name="period_button_text">Choose period...</string>
+    <string name="check_date_empty_date">05.12.2020</string>
+
+    <string name="check_date_Checked">Chk: %1$s</string>
+    <string name="pref_check_date_month">Value: %1$s</string>
+    <string name="pref_check_date_month_title">Months to check</string>
+    <string name="pref_check_date_month_summary">Months: %1$s</string>
 
 
 </resources>

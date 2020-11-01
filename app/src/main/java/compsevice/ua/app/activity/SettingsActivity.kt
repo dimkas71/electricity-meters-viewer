@@ -31,6 +31,7 @@ class SettingsActivity : AppCompatActivity() {
                 USER_KEY -> updateSummary(USER_KEY, String::class)
                 SEARCH_VARIANT_KEY -> updateSummary(SEARCH_VARIANT_KEY, String::class)
                 BEGIN_DATE_KEY -> updateSummary(BEGIN_DATE_KEY, Long::class)
+                CHECK_DATE_MONTH_KEY -> updateSummary(CHECK_DATE_MONTH_KEY, Int::class)
                 else -> ""
             }
 
@@ -44,6 +45,7 @@ class SettingsActivity : AppCompatActivity() {
                     .forEach{updateSummary(it, String::class)}
 
             updateSummary(BEGIN_DATE_KEY, Long::class)
+            updateSummary(CHECK_DATE_MONTH_KEY, Int::class)
 
         }
 
@@ -63,12 +65,14 @@ class SettingsActivity : AppCompatActivity() {
             const val USER_KEY = "pref_user"
             const val SEARCH_VARIANT_KEY = "pref_search_variant"
             const val BEGIN_DATE_KEY = "pref_begin_date"
+            const val CHECK_DATE_MONTH_KEY = "pref_check_date_month"
 
             val MAP = mapOf(
                     URL_KEY to R.string.pref_url_summary,
                     USER_KEY to R.string.pref_user_summary,
                     SEARCH_VARIANT_KEY to R.string.pref_search_variant_summary,
-                    BEGIN_DATE_KEY to R.string.pref_begin_date_summary)
+                    BEGIN_DATE_KEY to R.string.pref_begin_date_summary,
+                    CHECK_DATE_MONTH_KEY to R.string.pref_check_date_month_summary)
         }
 
         private fun <T> updateSummary(key: String, type: T) {
@@ -82,6 +86,7 @@ class SettingsActivity : AppCompatActivity() {
 
                 String::class -> findPreference(key)?.summary = getString(resId, sp.getString(key, ""))
                 Long::class -> findPreference(key)?.summary = getString(resId, sp.getLong(key, 0).asDate())
+                Int::class -> findPreference(key)?.summary = getString(resId, sp.getString(key, ""))
             }
 
 

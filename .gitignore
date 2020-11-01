@@ -1,4 +1,6 @@
 .idea/
+gradle/
+gradle/wrapper/
 *.iml
 .gradle
 /local.properties

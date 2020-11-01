@@ -4,6 +4,8 @@ import android.os.Parcel
 import android.os.Parcelable
 import com.squareup.moshi.FromJson
 import com.squareup.moshi.ToJson
+import java.text.SimpleDateFormat
+import java.util.*
 
 enum class ServiceType(val alias: String)  {
 
@@ -97,13 +99,14 @@ data class Counter(val uuid: String, val factory: String, val value: Long, val c
     }
 }
 
-data class ContractInfo(val uuid: String, val number: String, val owner: String, val sector: Int, val counters: List<Counter>, val credits: List<Credit>) : Parcelable {
+data class ContractInfo(val uuid: String, val number: String, val owner: String, val sector: Int, val checkDate: Date, val counters: List<Counter>, val credits: List<Credit>) : Parcelable {
 
     constructor(parcel: Parcel) : this(
             parcel.readString(),
             parcel.readString(),
             parcel.readString(),
             parcel.readInt(),
+            SimpleDateFormat("dd.MM.yyyy").parse(parcel.readString()),
             parcel.createTypedArrayList(Counter),
             parcel.createTypedArrayList(Credit)) {
     }
@@ -128,6 +131,7 @@ data class ContractInfo(val uuid: String, val number: String, val owner: String,
         parcel.writeString(number)
         parcel.writeString(owner)
         parcel.writeInt(sector)
+        parcel.writeString(SimpleDateFormat("dd.MM.yyyy").format(checkDate))
         parcel.writeTypedList(counters)
         parcel.writeTypedList(credits)
     }

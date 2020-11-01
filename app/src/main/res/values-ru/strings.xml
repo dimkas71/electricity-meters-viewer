@@ -52,6 +52,12 @@
     <string name="text_consuming_sector_number">Сектор №: %1$s</string>
     <string name="text_consuming_value">%1$s (Квт.)</string>
     <string name="period_button_text">Выбор периода...</string>
+    <string name="check_date_empty_date">05.12.2020</string>
+
+    <string name="check_date_Checked">Пров.: %1$s</string>
+    <string name="pref_check_date_month">Value: %1$s</string>
+    <string name="pref_check_date_month_title">Проверять месяцев:</string>
+    <string name="pref_check_date_month_summary">Проверять месяцев: %1$s</string>
 
     <string-array name="search_variant_titles">
         <item name="1">По номеру договора</item>

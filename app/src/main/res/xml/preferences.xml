@@ -28,7 +28,7 @@
             android:key="pref_url"
             android:title="@string/pref_url_title"
             android:summary="@string/pref_url_summary"
-            android:defaultValue="http://194.44.128.140:9090/demo/hs/"/>
+            android:defaultValue="http://194.44.128.108:9090/demo/hs/"/>
         <EditTextPreference
             android:key="pref_user"
             android:title="@string/pref_user_title"
@@ -38,10 +38,20 @@
         <EditTextPreference
             android:key="pref_password"
             android:title="@string/pref_password_title"
-            android:password="true"
+            android:inputType="textPassword"
             android:defaultValue="fake password"/>
 
+
     </PreferenceCategory>
+
+    <EditTextPreference
+        android:defaultValue="12"
+        android:inputType="number"
+        android:key="pref_check_date_month"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_check_date_month_title"
+        android:summary="@string/pref_check_date_month_summary"/>
 
 
 </PreferenceScreen>
