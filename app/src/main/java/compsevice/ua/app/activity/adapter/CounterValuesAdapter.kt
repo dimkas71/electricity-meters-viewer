@@ -10,15 +10,15 @@ import compsevice.ua.app.viewmodel.CounterValuesHistory
 import java.text.SimpleDateFormat
 
 
-class CounterValuesAdapter(val items: List<CounterValuesHistory>) : BaseExpandableListAdapter() {
+class CounterValuesAdapter(private val items: List<CounterValuesHistory>) : BaseExpandableListAdapter() {
 
     private val formatter: SimpleDateFormat = SimpleDateFormat("dd.MM.yy")
 
-    val map: Map<String, List<CounterValuesHistory>>
+    private val map: Map<String, List<CounterValuesHistory>>
             get() = items.groupBy { it.counter }
 
 
-    val groups: Array<String>
+    private val groups: Array<String>
         get() = items.groupBy { it.counter }.keys.toTypedArray()
 
 

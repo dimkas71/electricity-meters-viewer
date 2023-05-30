@@ -68,13 +68,14 @@ data class Credit(val uuid: String, val service: ServiceType, val counter: Strin
     }
 }
 
-data class Counter(val uuid: String, val factory: String, val value: Long, val contractNumber: String) : Parcelable {
+data class Counter(val uuid: String, val factory: String, val value: Long, val contractNumber: String, val isOff: Boolean = false) : Parcelable {
 
     constructor(parcel: Parcel) : this(
         parcel.readString()!!,
         parcel.readString()!!,
             parcel.readLong(),
-            parcel.readString()!!) {
+            parcel.readString()!!,
+    parcel.readInt()!! == 1) {
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
@@ -82,6 +83,7 @@ data class Counter(val uuid: String, val factory: String, val value: Long, val c
         parcel.writeString(factory ?: "")
         parcel.writeLong(value)
         parcel.writeString(contractNumber ?: "")
+        parcel.writeInt(if (isOff) 1 else 0)
     }
 
     override fun describeContents(): Int {
@@ -99,7 +101,7 @@ data class Counter(val uuid: String, val factory: String, val value: Long, val c
     }
 }
 
-data class ContractInfo(val uuid: String, val number: String, val owner: String, val sector: Int, val checkDate: Date, val counters: List<Counter>, val credits: List<Credit>) : Parcelable {
+data class ContractInfo(val uuid: String, val number: String, val owner: String, val sector: Int, val checkDate: Date, val counters: List<Counter>, val credits: List<Credit>, val isOff: Boolean = false) : Parcelable {
 
     constructor(parcel: Parcel) : this(
         parcel.readString()!!,
@@ -108,7 +110,8 @@ data class ContractInfo(val uuid: String, val number: String, val owner: String,
             parcel.readInt(),
             SimpleDateFormat("dd.MM.yyyy").parse(parcel.readString()),
         parcel.createTypedArrayList(Counter)!!,
-        parcel.createTypedArrayList(Credit)!!
+        parcel.createTypedArrayList(Credit)!!,
+        parcel.readInt()!! == 1
     ) {
     }
 
@@ -135,6 +138,7 @@ data class ContractInfo(val uuid: String, val number: String, val owner: String,
         parcel.writeString(SimpleDateFormat("dd.MM.yyyy").format(checkDate))
         parcel.writeTypedList(counters)
         parcel.writeTypedList(credits)
+        parcel.writeInt(if (isOff) 1 else 0)
     }
 
     override fun describeContents(): Int {

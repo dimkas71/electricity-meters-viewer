@@ -14,7 +14,7 @@ data class PaymentsHistory(val period: Date, val counter: String, val accrued: D
 
 data class ContractInfo(val contractNumber: String, val sectorNumber: Int, val paymentDay: Int,
                         val client: Client, val countersHistory: List<CounterValuesHistory>,
-                        val paymentsHistory: List<PaymentsHistory>)
+                        val paymentsHistory: List<PaymentsHistory>, val isOff: Boolean = false)
 
 
 class ContractInfoViewModel : ViewModel() {

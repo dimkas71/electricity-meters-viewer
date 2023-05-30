@@ -71,7 +71,7 @@ class CommonInfoFragment : Fragment() {
         currentContractInfoModel?.getContractInfo().observe(this, Observer<compsevice.ua.app.model.ContractInfo> {
             Log.i(CommonInfoFragment::class.java.simpleName, "Contract info: $it")
 
-            val adapter = it?.counters?.map { Item(it.factory, it.value) }?.toList()?.let { it1 -> CounterInfoAdapter(it1) }
+            val adapter = it?.counters?.map { Item(it.factory, it.value, it.isOff) }?.toList()?.let { it1 -> CounterInfoAdapter(it1) }
 
             currentCountersValues.adapter = adapter
             currentCountersValues.layoutManager = LinearLayoutManager(context)

@@ -11,4 +11,5 @@
     <color name="colorGray">#e2dfe9</color>
     <color name="colorCheckDate">#F30707</color>
     <color name="colorCheckDateStandard">#035A52</color>
+    <color name="colorCounterIsOff">#8F8685</color>
 </resources>

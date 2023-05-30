@@ -4,7 +4,11 @@ import android.content.Context
 import android.content.Intent
 import android.preference.PreferenceManager
 import android.support.v7.widget.RecyclerView
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.SpannableStringBuilder
 import android.text.TextUtils
+import android.text.style.ForegroundColorSpan
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +16,7 @@ import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.Filterable
 import android.widget.TextView
+import com.fasterxml.jackson.core.util.TextBuffer
 import compsevice.ua.app.R
 import compsevice.ua.app.activity.ContractInfoDetailActivity
 import compsevice.ua.app.activity.SettingsActivity
@@ -57,24 +62,32 @@ class ContractInfoAdapter(private val context: Context, private var contracts: L
 
         holder.tvOwner.text = contractInfo.owner
 
-        val sb = StringBuilder()
+        val ssb = SpannableStringBuilder()
 
-        for ((_, factoryNumber, value, contractNumber) in contractInfo.counters) {
-
+        for ((_, factoryNumber, value, contractNumber, isOff) in contractInfo.counters) {
+            val sb = StringBuilder()
             sb.append(context.resources.getString(R.string.text_counters_factory_number))
-                    .append(factoryNumber)
-                    .append("    ")
-                    .append(String.format("%s %d", context.resources.getString(R.string.text_counters_value), value))
-                    .append("    ")
-                    .append(context.resources.getString(R.string.text_counters_contract_number))
-                    .append(contractNumber)
-                    .append("\n")
+                .append(factoryNumber)
+                .append("    ")
+                .append(String.format("%s %d", context.resources.getString(R.string.text_counters_value), value))
+                .append("    ")
+                .append(context.resources.getString(R.string.text_counters_contract_number))
+                .append(contractNumber)
+                .append("\n")
+            val counterInfo = sb.toString()
+            val ss = SpannableString(counterInfo)
+            if (isOff) {
+                ss.setSpan(ForegroundColorSpan(context.resources.getColor(R.color.colorCounterIsOff)), 0, ss.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+            } else {
+                ss.setSpan(ForegroundColorSpan(context.resources.getColor(R.color.colorCounters)), 0, ss.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
+            }
+            ssb.append(ss)
         }
 
-        sb.deleteCharAt(sb.toString().length - 1)
+        ssb.delete(ssb.toString().length - 1, ssb.toString().length)
 
 
-        holder.tvCounters.text = sb.toString()
+        holder.tvCounters.setText(ssb, TextView.BufferType.SPANNABLE)
 
         val creditElectricity = contractInfo.creditByService(ServiceType.Electricity)
 
