@@ -45,7 +45,7 @@ interface RandomService {
             var password = PreferenceManager.getDefaultSharedPreferences(context).getString("pref_password","mbuh")
 
             val client = OkHttpClient.Builder()
-                    .addInterceptor(BasicAuthInterceptor(user, password))
+                    .addInterceptor(BasicAuthInterceptor(user!!, password!!))
                     .build()
 
             val retrofit = Retrofit.Builder()

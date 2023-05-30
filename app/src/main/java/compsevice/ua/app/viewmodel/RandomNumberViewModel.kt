@@ -29,7 +29,7 @@ class RandomNumberViewModel @Inject constructor(private var service: RandomServi
     fun update(value: Int = 10) {
         service.randomNumber(0, value).enqueue(object: Callback<RandomNumber> {
             override fun onFailure(call: Call<RandomNumber>?, t: Throwable?) {
-                Log.e(call?.javaClass?.simpleName, t?.message)
+                Log.e(call?.javaClass?.simpleName, t?.message!!)
             }
 
             override fun onResponse(call: Call<RandomNumber>?, response: Response<RandomNumber>?) {

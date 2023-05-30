@@ -37,6 +37,7 @@ class SettingsActivity : AppCompatActivity() {
 
         }
 
+        @Deprecated("Deprecated in Java")
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             addPreferencesFromResource(R.xml.preferences)
@@ -49,11 +50,13 @@ class SettingsActivity : AppCompatActivity() {
 
         }
 
+        @Deprecated("Deprecated in Java")
         override fun onResume() {
             super.onResume()
             preferenceScreen.sharedPreferences.registerOnSharedPreferenceChangeListener(this)
         }
 
+        @Deprecated("Deprecated in Java")
         override fun onPause() {
             super.onPause()
             preferenceScreen.sharedPreferences.unregisterOnSharedPreferenceChangeListener(this)

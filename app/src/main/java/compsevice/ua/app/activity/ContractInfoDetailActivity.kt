@@ -37,7 +37,7 @@ class ContractInfoDetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_contract_info_detail_new)
 
 
-        val contract: ContractInfo = intent.extras[KEY_CONTRACT] as ContractInfo
+        val contract: ContractInfo = intent.extras!![KEY_CONTRACT] as ContractInfo
 
         currentContractInfoModel = ViewModelProviders.of(this).get(CurrentContractInfoViewModel::class.java)
 
@@ -104,7 +104,7 @@ class ContractInfoDetailActivity : AppCompatActivity() {
     }
 
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item?.itemId) {
             R.id.action_settings -> {
                 startActivity(Intent(applicationContext, SettingsActivity::class.java))

@@ -32,11 +32,12 @@ class DatePickerPreference(context: Context, attrs: AttributeSet) : DialogPrefer
 
     }
 
-    override fun onSelectedDayChange(view: CalendarView?, year: Int, month: Int, dayOfMonth: Int) {
+    override fun onSelectedDayChange(view: CalendarView, year: Int, month: Int, dayOfMonth: Int) {
         Log.i(TAG, "($dayOfMonth, $month, $year)")
         calendar.set(year, month, dayOfMonth)
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onBindDialogView(view: View?) {
         Log.i(TAG, "OnBindDialogView")
         calendarView = view?.findViewById(R.id.calendarView) ?: CalendarView(context)
@@ -45,6 +46,7 @@ class DatePickerPreference(context: Context, attrs: AttributeSet) : DialogPrefer
         super.onBindDialogView(view)
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onDialogClosed(positiveResult: Boolean) {
         if (positiveResult) {
             date = calendar.timeInMillis
@@ -52,6 +54,7 @@ class DatePickerPreference(context: Context, attrs: AttributeSet) : DialogPrefer
         }
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onSetInitialValue(restorePersistedValue: Boolean, defaultValue: Any?) {
         if (restorePersistedValue) {
             date = getPersistedLong(0)
@@ -60,6 +63,7 @@ class DatePickerPreference(context: Context, attrs: AttributeSet) : DialogPrefer
         }
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onGetDefaultValue(a: TypedArray?, index: Int): Any {
        val defaultValue = a?.getString(index) ?: "01/01/1970"
        date = SimpleDateFormat("dd/MM/yyyy").parse(defaultValue).time

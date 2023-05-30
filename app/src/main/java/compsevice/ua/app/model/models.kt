@@ -40,9 +40,9 @@ class ServiceTypeAdapter {
 
 data class Credit(val uuid: String, val service: ServiceType, val counter: String, val credit: Double) : Parcelable {
     constructor(parcel: Parcel) : this(
-            parcel.readString(),
-            ServiceType.toServiceType(parcel.readString()),
-            parcel.readString(),
+        parcel.readString()!!,
+            ServiceType.toServiceType(parcel.readString()!!),
+        parcel.readString()!!,
             parcel.readDouble()) {
     }
 
@@ -71,10 +71,10 @@ data class Credit(val uuid: String, val service: ServiceType, val counter: Strin
 data class Counter(val uuid: String, val factory: String, val value: Long, val contractNumber: String) : Parcelable {
 
     constructor(parcel: Parcel) : this(
-            parcel.readString(),
-            parcel.readString(),
+        parcel.readString()!!,
+        parcel.readString()!!,
             parcel.readLong(),
-            parcel.readString()) {
+            parcel.readString()!!) {
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
@@ -102,13 +102,14 @@ data class Counter(val uuid: String, val factory: String, val value: Long, val c
 data class ContractInfo(val uuid: String, val number: String, val owner: String, val sector: Int, val checkDate: Date, val counters: List<Counter>, val credits: List<Credit>) : Parcelable {
 
     constructor(parcel: Parcel) : this(
-            parcel.readString(),
-            parcel.readString(),
-            parcel.readString(),
+        parcel.readString()!!,
+        parcel.readString()!!,
+        parcel.readString()!!,
             parcel.readInt(),
             SimpleDateFormat("dd.MM.yyyy").parse(parcel.readString()),
-            parcel.createTypedArrayList(Counter),
-            parcel.createTypedArrayList(Credit)) {
+        parcel.createTypedArrayList(Counter)!!,
+        parcel.createTypedArrayList(Credit)!!
+    ) {
     }
 
     fun creditByService(service: ServiceType): Double =

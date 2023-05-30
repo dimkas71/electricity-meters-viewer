@@ -45,7 +45,7 @@ class ContractInfoAdapter(private val context: Context, private var contracts: L
                 SimpleDateFormat("dd.MM.yyyy").format(contractInfo.checkDate))
 
         val pm = PreferenceManager.getDefaultSharedPreferences(context)
-        val accepted = pm.getString(SettingsActivity.SettingsFragment.CHECK_DATE_MONTH_KEY, "12").toInt().absoluteValue
+        val accepted = pm.getString(SettingsActivity.SettingsFragment.CHECK_DATE_MONTH_KEY, "12")!!.toInt().absoluteValue
 
         val actual = monthBetween(contractInfo.checkDate, Date()).absoluteValue
         if (actual > accepted) {

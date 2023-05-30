@@ -50,7 +50,7 @@ interface RestApi {
             val password = sp.getString("pref_password", "")
 
             val client = OkHttpClient.Builder()
-                    .addInterceptor(BasicAuthInterceptor(user, password))
+                    .addInterceptor(BasicAuthInterceptor(user!!, password!!))
                     .build()
 
             val moshi = Moshi.Builder()

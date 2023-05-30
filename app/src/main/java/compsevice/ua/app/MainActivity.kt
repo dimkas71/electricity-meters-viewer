@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
 
         val mapper = ObjectMapper()
 
-        val infos = ArrayList<ContractInfo>()
+        val info = ArrayList<ContractInfo>()
 
         var `is`: InputStream? = null
 
@@ -84,8 +84,8 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
             `is` = resources.openRawResource(R.raw.data)
 
             val cis = mapper.readValue(`is`, Array<ContractInfo>::class.java)
-            infos.addAll(Arrays.asList(*cis))
-            Log.i("Info", infos.toString())
+            info.addAll(Arrays.asList(*cis))
+            Log.i("Info", info.toString())
         } catch (e: IOException) {
             e.printStackTrace()
         } finally {
@@ -99,7 +99,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
             }
         }
 
-        return infos
+        return info
 
     }
 
@@ -167,6 +167,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
             this.activity = WeakReference(activity)
         }
 
+        @Deprecated("Deprecated in Java")
         override fun doInBackground(vararg queries: String): List<ContractInfo>? {
 
             val service = activity.get()?.let { RestApi.service(it) }
@@ -197,11 +198,14 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
             return cis
         }
 
+
+        @Deprecated("Deprecated in Java")
         override fun onPreExecute() {
             progressBar.get()?.setVisibility(View.VISIBLE)
             super.onPreExecute()
         }
 
+        @Deprecated("Deprecated in Java")
         override fun onPostExecute(cis: List<ContractInfo>?) {
             progressBar.get()?.setVisibility(View.GONE)
 
